@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Zilla Slab'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    /* #page{
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        background-color: blue
+      } */
+    .navbar {
+      background-color: black;
+      height: 40px;
+      color: wheat;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 97%;
+
+    }
+
+    .navbar li a {
+      color: white;
+      font-size: large;
+      font-weight: bold;
+      font: 1 sans-serif;
+    }
+
+
+
+
+
+    .Jackets {
+      position: relative;
+    }
+
+    .jackets:hover .dropdown-content1 {
+      display: inline-block;
+      position: block;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content1 {
+      display: none;
+      position: absolute;
+      background-color: #181717;
+      min-width: 200px;
+      height: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+      z-index: 1;
+    }
+
+    .navbar-li a {
+      display: inline-block;
+      align-items: center;
+      margin: 10px 20px;
+      justify-content: center;
+
+    }
+
+    #headerP {
+      text-align: center;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    #header {
+      background-color: beige;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      display: flex;
+      animation: slide 16s infinite;
+    }
+
+    #HeaderImage {
+
+      width: 100%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      overflow: hidden;
+      /* border: 10px solid #ffffff; */
+      border-radius: 8px;
+      /* box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3); */
+
+    }
+
+    img {
+      width: 100%;
+    }
+
+    #headerBlock {
+      display: inline-block;
+      height: 80vh;
+      width: 100%;
+      /* background-color: black; */
+      /* border: 2px saddlebrown solid; */
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+
+      25% {
+        transform: translateX(0);
+      }
+
+      30% {
+        transform: translateX(-100%);
+      }
+
+      50% {
+        transform: translateX(-100%);
+      }
+
+      55% {
+        transform: translateX(-200%);
+      }
+
+      75% {
+        transform: translateX(-200%);
+      }
+
+      80% {
+        transform: translateX(-300%);
+      }
+
+      100% {
+        transform: translateX(-300%);
+      }
+    }
+
+    #Hero {
+      width: 100%;
+      height: 70vh;
+
+    }
+
+    #hero-img {
+      /* border: 2px solid rgb(167, 10, 10); */
+      display: flex;
+      height: 80%;
+      justify-content: space-between;
+
+    }
+
+    #hero-LeftImg {
+      width: 120%;
+      /* border: 2px solid black; */
+      height: 100%;
+      /* margin:; */
+    }
+
+    #hero-img #hero4img {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      /* padding: 5% 0px; */
+      flex-direction: column;
+    }
+
+    #hero-img #hero4img img {
+      /* border: 2px solid blue; */
+      border: 1px solid rgba(119, 119, 119, 0.747);
+      height: 100%;
+      margin: 0px 4% 10px 4%;
+      /* padding: 0px 2%; */
+      width: 70%;
+    }
+
+    #HeroProductFeature h1 {
+      margin: 10px 2%;
+    }
+
+    #HeroProductFeature {
+
+      /* border: 2px solid blue; */
+      width: 100%;
+      height: 100%;
+      background-color: rgba(203, 217, 223, 0.884);
+    }
+
+    #HeroProductFeature .FeaturePara p {
+      font-size: 0.9rem;
+      font-family: 'Zilla Slab', serif;
+
+      /* border: 2px saddlebrown solid; */
+
+    }
+
+    #herolasttext {
+      /* border: 2px solid blue; */
+      height: 150px;
+      width: 100%;
+      margin: 1% 0px;
+      margin-top: 50px;
+    }
+
+    #herolasttext p {
+      /* padding: 1% 5%; */
+      padding-left: 1%;
+    }
+
+    .productimages {
+
+      height: 100%;
+      display: flex;
+      width: 100%;
+      /* justify-content: center; */
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .imgheading {
+      background-color: black;
+      width: 70%;
+      height: 50px;
+    }
+
+    .imgheading h1 {
+      color: rgb(221, 219, 215);
+      /* text-align: center; */
+      /* border: 2px rgb(146, 123, 107) solid; */
+      height: 100%;
+      margin: auto 0px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .imgproduct {
+      /* border: 2px solid black; */
+      height: 40%;
+      width: 70%;
+      display: flex;
+      /* background-color: blueviolet; */
+      align-items: center;
+      justify-content: center;
+    }
+
+    .imgproduct .bor img {
+      object-fit: fill;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      border: 2px solid burlywood;
+      /* margin: 0% 10px; */
+    }
+
+    .bor {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 10px 10px 10px;
+      height: 100%;
+      width: 100%;
+
+      /* margin: 10px; */
+      /* padding: 10px; */
+    }
+
+    .img {
+      height: 100%;
+      width: 200px;
+      /* object-fit: fill; */
+    }
+
+    .product2ndsection {
+      
+      
+      height: 100vh;
+      display: flex;
+      width: 100%;
+      margin-top: 2%;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .margindiv {
+      margin-top: 4%;
+      padding-bottom: 2%;
+    }
+
+    .block {
+      border: 2px solid rgba(102, 102, 102, 0.438);
+      display: block;
+    }
+
+    #footersection {
+      height: 100%;
+      width: 100%;
+      background-color: black;
+    }
+
+    .footer {
+      background-color:white;
+      border: 2px solid black;
+      height: 1000px;
+      width: 100%;
+      margin-top: 40%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="dropdown">
+      <span>hi</span>
+      <div class="dropdown-content">
+        <p>Hello World!</p>
+      </div> -->
+  <div id="page">
+    <nav>
+      <ul class="navbar">
+        <li class="navbar-li">
+          <a href="home">HOMEPAGE</a>
+          <a href="#" class="jackets">jackets
+            <div class="dropdown-content1">
+              <p>Career</p>
+            </div>
+            <!-- <div class="dropdown-content2">jackers2</div>
+              <div class="dropdown-content3">jackets44</div> -->
+
+            <a href="home">Our Company</a>
+            <a href="home">About Us</a>
+            <a href="home">Men</a>
+            <a href="home">Women</a>
+            <a href="home">Contact us</a>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+  <!-- Header Sections starts here -->
+  <div id="header">
+
+    <div id="headerP">
+      <p>
+        Free Delivery For All Orders
+      </p>
+
+      <p>
+        Free Delivery For All Orders
+      </p>
+      <p>
+        Free Delivery For All Orders
+      </p>
+      <p>
+        Free Delivery For All Orders
+      </p>
+
+
+    </div>
+
+
+  </div>
+  <!-- Header Top Heading Closed here -->
+  <!-- Header Image Section -->
+  <div id="headerBlock">
+
+    <div id="HeaderImage">
+
+
+      <div class="image-wrapper">
+        <img src="https://amsainternational.biz/items/gallery/12-inner-gallery-1.jpeg" alt="" style="width: 100%;">
+        <img src="https://amsainternational.biz/items/gallery/12-inner-gallery-1.jpeg" style="width: 100%;">
+        <img src=" https://amsainternational.biz/items/gallery/12-inner-gallery-1.jpeg" style="width: 100%;">
+        <img src=" https://amsainternational.biz/items/gallery/12-inner-gallery-1.jpeg" style="width: 100%;">
+
+      </div>
+    </div>
+  </div>
+
+  <div id="Hero">
+
+    <div id="hero-img">
+
+      <div id="hero-LeftImg">
+
+        <img src="/s-l500 (1)33.jpg" alt="">
+
+      </div>
+      <div id="hero4img">
+        <img src="https://amsainternational.biz/items/products/74671866-2032-pic-1.jpg" alt="">
+        <img src="https://amsainternational.biz/items/products/565250490-2033-pic-1.jpg" alt="">
+        <img src="https://amsainternational.biz/items/products/326315922-1985-pic-1.jpg" alt="">
+        <img src="https://amsainternational.biz/items/products/21599642-2031-pic-1.jpg" alt="">
+      </div>
+      <div id="HeroProductFeature">
+        <h1>Our Products Features:</h1>
+        <ul id="ProductFeatureText">
+          <li class="FeaturePara">
+
+            <p> <b> Bold Text will use here</b>sit amet consectetur adipisicing elit. Minima quas sapiente cumque
+              necessitatibus
+              provident
+              adipisci optio quo nemo rerum, velit odit doloremque ex consequuntur iste incidunt ipsum nam corrupti
+              vitae?
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p>
+              <b> Bold Text will use here</b>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas sapiente cumque necessitatibus
+              provident
+              adipisci optio quo nemo rerum, velit odit doloremque ex consequuntur iste incidunt ipsum nam corrupti
+              vitae?
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b> Bold Text will use here</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas
+              sapiente cumque necessitatibus
+              provident
+              adipisci optio quo nemo rerum, velit odit doloremque ex consequuntur iste incidunt ipsum nam corrupti
+              vitae?
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b> Bold Text will use here</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas
+              sapiente cumque necessitatibus
+              provident
+              adipisci optio quo nemo rerum, velit odit doloremque ex consequuntur iste incidunt ipsum nam corrupti
+              vitae?
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b> Bold Text will use here</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas
+              sapiente cumque necessitatibus
+              provident
+              adipisci optio quo nemo rerum, velit odit doloremque ex consequuntur iste incidunt ipsum nam corrupti
+              vitae?
+            </p>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+    </div>
+    <div id="herolasttext">
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio, recusandae consequuntur
+        repellendus iusto assumenda! Rerum atque quaerat accusantium quae quam expedita fugit, sed perferendis, natus
+        magni cumque in reiciendis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio, recusandae consequuntur
+        repellendus iusto assumenda! Rerum atque quaerat accusantium quae quam expedita fugit, sed perferendis, natus
+        magni cumque in reiciendis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vitae dolor, eius, odit esse ipsam non sunt
+        saepe, dolorem aspernatur eaque nulla in. Quis ab sit dolores architecto, ex temporibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit quam quisquam consequatur quasi ducimus
+        labore, saepe quaerat debitis, quod repellat odio nam quidem assumenda mollitia fuga voluptas illum ex.
+      </p>
+    </div>
+
+
+    <div class="productimages">
+      <div class="imgheading">
+        <h1>Our Products</h1>
+      </div>
+      <div class="imgproduct">
+        <div class="bor">
+
+          <img src="/s-l1600 (8).jpg" alt="">
+
+
+
+        </div>
+        <div class="bor">
+          <img src="/s-l1600 (2).jpg" alt="">
+
+        </div>
+        <div class="bor">
+
+          <img src="https://i.ebayimg.com/images/g/ijMAAOSwNTRh8qAe/s-l1600.jpg" alt="">
+        </div>
+        <div class="bor">
+
+          <img src="https://i.ebayimg.com/images/g/mRoAAOSwsZ5lGo0f/s-l1600.jpg" alt="">
+        </div>
+        <div class="bor">
+          <img src="https://i.ebayimg.com/images/g/0iUAAOSw9S5lSIga/s-l1600.jpg" alt="">
+        </div>
+        <div class="bor ">
+          <img src="https://i.ebayimg.com/images/g/FJMAAOSwAWdhiWEs/s-l1600.jpg" alt="">
+        </div>
+      </div>
+
+
+      <div class="product2ndsection">
+        <div class="imgheading">
+
+          <h1>Our Products</h1>
+
+        </div>
+
+        <div class="imgproduct">
+          <div class="bor margindiv">
+            <img src="/s-l1600 (8).jpg" alt="">
+
+          </div>
+          <div class="bor margindiv">
+            <img src="/s-l1600 (2).jpg" alt="">
+
+          </div>
+          <div class="bor margindiv">
+
+            <img src="/s-l1600 (13).jpg" alt="">
+          </div>
+          <div class="bor margindiv">
+
+            <img src="/7.jpg" alt="">
+          </div>
+          <div class="bor margindiv">
+            <img src="/5.jpg" alt="">
+          </div>
+          <div class="bor margindiv ">
+            <img src="https://i.ebayimg.com/images/g/FJMAAOSwAWdhiWEs/s-l1600.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="imgproduct">
+          <div class="bor margindiv">
+            <img src="/s-l1600 (8).jpg" alt="">
+
+          </div>
+          <div class="bor margindiv">
+            <img src="/s-l1600 (2).jpg" alt="">
+
+          </div>
+          <div class="bor margindiv">
+
+            <img src="https://i.ebayimg.com/images/g/ijMAAOSwNTRh8qAe/s-l1600.jpg" alt="">
+          </div>
+          <div class="bor margindiv">
+
+            <img src="https://i.ebayimg.com/images/g/mRoAAOSwsZ5lGo0f/s-l1600.jpg" alt="">
+          </div>
+          <div class="bor margindiv">
+            <img src="https://i.ebayimg.com/images/g/0iUAAOSw9S5lSIga/s-l1600.jpg" alt="">
+          </div>
+          <div class="bor margindiv ">
+            <img src="https://i.ebayimg.com/images/g/FJMAAOSwAWdhiWEs/s-l1600.jpg" alt="">
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+  
+
+
+
+
+</body>
+
+</html>
