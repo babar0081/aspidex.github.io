@@ -103,31 +103,38 @@
 
     }
 
-    #check{
-  display: none;
-}
-@media only screen and (max-width:900px) {
-      #check:checked ~ nav{
+    #check {
+      display: none;
+    }
+
+    @media only screen and (max-width:900px) {
+      #check:checked~nav {
         left: 0;
       }
-      #check:checked ~ label #btn{
+
+      #check:checked~label #btn {
         left: 250px;
         opacity: 0;
         pointer-events: none;
       }
-      #check:checked ~ label #cancel{
+
+      #check:checked~label #cancel {
         left: 195px;
       }
-      #check:checked ~ section{
+
+      #check:checked~section {
         margin-left: 250px;
       }
-      label #btn,label #cancel{
+
+      label #btn,
+      label #cancel {
         position: absolute;
         background: #042331;
         border-radius: 3px;
         cursor: pointer;
       }
-      label #btn{
+
+      label #btn {
         left: 40px;
         top: 25px;
         font-size: 35px;
@@ -135,7 +142,8 @@
         padding: 6px 12px;
         transition: all .5s;
       }
-      label #cancel{
+
+      label #cancel {
         z-index: 1111;
         left: -195px;
         top: 17px;
@@ -144,37 +152,42 @@
         padding: 4px 9px;
         transition: all .5s ease;
       }
-     *{
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-     }
-     nav #dropbox li:hover>a {
-      /* border: 2px solid black; */
-      background: none;
-    }
-    #dropbox li a i {
-      display: none;
-    }
-     nav #dropbox .submenu li {
-      background-color:none;
-      list-style: none;
 
-      height: 100%;
-      width: 100%;
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
 
-    }
+      nav #dropbox li:hover>a {
+        /* border: 2px solid black; */
+        background: none;
+      }
 
-    nav #dropbox li:hover>.submenu {
-      display: none;
+      #dropbox li a i {
+        display: none;
+      }
 
-    }
+      nav #dropbox .submenu li {
+        background-color: none;
+        list-style: none;
+
+        height: 100%;
+        width: 100%;
+
+      }
+
+      nav #dropbox li:hover>.submenu {
+        display: none;
+
+      }
+
       nav {
-        
+
         width: 100%;
         height: 100vh;
       }
-      
+
       #dropbox {
         background-color: rgb(0, 0, 0);
         align-items: center;
@@ -182,33 +195,34 @@
         width: 100%;
         height: 100%;
         flex-direction: column;
-        
+
       }
-      
-      
-      #dropbox li{
+
+
+      #dropbox li {
         height: 40px;
         display: flex;
         border: none;
-        
-        
+
+
         justify-content: center;
         align-items: center;
         width: 60%;
-        
+
       }
-      
+
       nav #dropbox li a {
         border: 2px solid rgb(255, 248, 248);
         font-size: 16px;
         padding: 0px;
         margin-top: 30px;
-        
+
         width: 100%;
         color: white;
 
       }
-      #dropbox button{
+
+      #dropbox button {
         background-color: black;
         height: 40px;
         color: white;
@@ -220,10 +234,11 @@
         right: 20px;
 
       }
-        
-        
-    
+
+
+
     }
+
     .marginicon {
       padding-left: 5px;
     }
@@ -383,38 +398,27 @@
     }
 
     #HeroProductFeature {
-      /* border: 2px solid blue; */
+      
       width: 100%;
       height: 80%;
       background-color: #F7F7F7;
-      /* list-style: none; */
+      
     }
 
     #HeroProductFeature .FeaturePara p {
-      font-size: 1rem;
-
-      font-family: 'Zilla Slab', serif;
-      /* border: 2px saddlebrown solid; */
-      width: 100%;
-
+      font-size: 0.9rem;
+      line-height:1.8;
+      padding: 1px;
+      width: 100%;      
     }
 
     .FeaturePara {
       box-sizing: border-box;
       list-style: none;
-      /* font-size: 1rem; */
-      padding: 2%;
-
+       line-height: 1;
     }
 
-    .FeaturePara p {
-
-      font-size: 1.5rem;
-
-
-    }
-
-
+    
     #herolasttext {
       /* border: 2px solid blue; */
       height: 150px;
@@ -433,7 +437,6 @@
       height: 100%;
       display: flex;
       width: 100%;
-      /* justify-content: center; */
       align-items: center;
       flex-direction: column;
     }
@@ -630,13 +633,14 @@
       justify-content: space-evenly;
       height: 100%;
     }
-    
+
     #footer ul li {
-      
+
       list-style: none;
       font-size: 1.2rem;
     }
-    #footer ul li a{
+
+    #footer ul li a {
       /* background-color: white; */
       color: white;
       text-decoration: none;
@@ -654,53 +658,47 @@
   <div id="page">
 
     <nav>
-      <ul id="dropbox"> 
+      <ul id="dropbox">
         <input type="checkbox" id="check">
-      <label for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-      </label>
+        <label for="check">
+          <i class="fas fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
+        </label>
 
-        <li><a href="">HOME</a></li>
+        <li><a href="https://www.ebay.it/str/abbigliamentomoto" target="_blank">HOME</a></li>
         <li><a href="">PRODUCTS <i class="fa-solid fa-caret-down marginicon"></i></a>
           <ul class="submenu">
-            <li><a href="">gloves</a></li>
-            <li><a href="">jackets</a></li>
-            <li><a href="">pants</a></li>
-            <li><a href="">shirts</a></li>
+            <li><a href="https://www.ebay.it/str/abbigliamentomoto/Giacca-da-moto/_i.html?store_cat=39497783011"
+                target="_blank">JACKETS</a></li>
+            <li><a
+                href="https://www.ebay.it/str/abbigliamentomoto/Pantaloni-protettivi-per-moto/_i.html?store_cat=43502870011"
+                target="_blank">TROUSER</a></li>
+            <li><a href="https://www.ebay.it/str/abbigliamentomoto/Guanti-da-moto/_i.html?store_cat=39497786011"
+                target="_blank">GLOVES</a></li>
+            <li><a href="https://www.ebay.it/str/abbigliamentomoto/Stivali-da-moto/_i.html?store_cat=39502817011"
+                target="_blank">BOOTS</a></li>
           </ul>
 
 
 
         </li>
-        <li><a href="">Fitness ACCESIORSES</a>
+        <li><a href="">Boxing Products</a>
           <ul class="submenu">
-            <li><a href="">gloves</a></li>
-            <li><a href="">jackets</a></li>
-            <li><a href="">pants</a></li>
-            <li><a href="">shirts</a></li>
+            <li><a href="https://www.ebay.it/str/abbigliamentomoto/guantoni-da-boxe/_i.html?store_cat=43504448011"
+                target="_blank">BOXING GLOVES</a></li>
+            <li><a href="">HEADGUARD</a></li>
+            <li><a href="">CHINGUARD</a></li>
+            <li><a href="">KICKPAD</a></li>
           </ul>
         </li>
         <li><a href="">CONTACT US <i class="fa-solid fa-caret-down marginicon"></i></a>
           <ul class="submenu">
-            <li><a href="">gloves</a></li>
-            <li><a href="">jackets</a></li>
-            <li><a href="">pants</a></li>
-            <li><a href="">shirts</a></li>
+            <li><a href="">MESSAGE US VIA EBAY</a></li>
+
           </ul>
         </li>
-        <li><a href="">CLOTHING <i class="fa-solid fa-caret-down marginicon"></i></a>
-
-          <ul class="submenu">
-            <li><a href="">gloves</a></li>
-            <li><a href="">jackets</a></li>
-            <li><a href="">pants</a></li>
-            <li><a href="">shirts</a></li>
-          </ul>
 
 
-        </li>
-        <li><a href="">INQUIRES</a></li>
         <li><a href="">LOCATION</a></li>
         <li><a href="">OTHER</a></li>
       </ul>
@@ -768,47 +766,75 @@
         <ul id="ProductFeatureText">
           <li class="FeaturePara">
 
-            <p> <b> Bold Text will use here</b>sit amet consectetur adipisicing elit. Minima quas sapiente cumque
-              necessitatibus
-              provident
-              adipisci optio quo nemo rerum, velit odit doloremque ex consequuntur iste incidunt ipsum nam corrupti
-              vitae?
+            <p> <b> SAFOLA AIR è la giacca ASPIDEX certificata in Classe A</b> perfetta in
+              ESTATE, antiacqua . Completa di protezioni certificate su spalle e gomiti
             </p>
           </li>
           <li class="FeaturePara">
             <p>
-              <b> Bold Text will use here</b>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas sapiente cumque necessitatibus
-              provident
-              adipisci optio quo nemo rerum, velit odit doloremque ex consequuntur iste incidunt ipsum nam corrupti
-              vitae?
+              <b>Protezioni per spalle e</b>
+               gomiti omologate CE.
             </p>
           </li>
           <li class="FeaturePara">
-            <p> <b> Bold Text will use here</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas
-              sapiente cumque necessitatibus
-              provident
-              adipisci optio quo nemo rerum, velit odit doloremque ex consequuntur iste incidunt ipsum nam corrupti
-              vitae?
+            <p> <b> Tutte le aree di cucitura per la</b> costruzione delle cuciture di sicurezza secondo lo standard EN 17092-4: 2022.
             </p>
           </li>
           <li class="FeaturePara">
-            <p> <b> Bold Text will use here</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas
-              sapiente cumque necessitatibus
-              provident
-              adipisci optio quo nemo rerum, velit odit doloremque ex consequuntur iste incidunt ipsum nam corrupti
-              vitae?
+            <p> <b> Chiusura del collo</b>  con regolazione del volume.
             </p>
           </li>
           <li class="FeaturePara">
-            <p> <b> Bold Text will use here</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas
-              sapiente cumque necessitatibus
-              provident
-              adipisci optio quo nemo rerum, velit odit doloremque ex consequuntur iste incidunt ipsum nam corrupti
-              vitae?
+            <p> <b> Regolazione del</b>  volume delle maniche.
             </p>
           </li>
+          <li class="FeaturePara">
+            <p> <b> Regolazione in vita</b>  con sistema di bottoni a pressione.
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b> Vita regolabile</b>   con cinturino e velcro..
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b> Chiusura lampo</b>   di collegamento.
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b> Giacca moto per uso stradale</b>  in tessuto traforato traspirante, misto poliestere e nylon.
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b>Tessuto</b>  Safetylite, Mexdura e Hitex 
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b>Design slim,  segue le proprie forme del </b>  corpo permettendo una guida comoda senza che il vento provochi disturbo.
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b>Sono incluse protezioni removibili</b>  su spalle e gomiti con omologazione certificata italiana, vano posteriore per inserimento protezione schiena.
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b>Rifiniture</b>  Catarifrangenti silver
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b>Regolazione della larghezza del bacino,</b>  Regolazione della larghezza del bacino, del braccio e del polso grazie a dei bottoni inseriti.
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b>Chiusura al collo</b>  regolabile per favorirne la comodità
+            </p>
+          </li>
+          <li class="FeaturePara">
+            <p> <b>Dotato complessivamente</b>  di 2 tasche esterne + 2 tasche interne
+            </p>
+          </li>
+          
 
+           
 
 
         </ul>
@@ -1033,32 +1059,32 @@
       <li><a href="">
           About us
         </a>
-        </li>
+      </li>
 
       <li><a href="">
           Add to favriout Seller
         </a>
-        </li>
+      </li>
 
       <li><a href="">
-        Answer
-      </a>
-        </li>
+          Answer
+        </a>
+      </li>
 
       <li><a href="">
           New Letter
         </a>
-        </li>
+      </li>
 
       <li><a href="">
           Ask The seller a question
         </a>
-        </li>
+      </li>
 
       <li><a href="">
           Visit Our Store
         </a>
-        </li>
+      </li>
 
 
 
