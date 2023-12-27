@@ -108,12 +108,17 @@
     }
 
     @media only screen and (max-width:900px) {
+      /* navbar mobile section */
+      /* html,body{
+        height: 100%;
+        width: 100%;
+      } */
       #check:checked~nav {
-        left: 0;
+        right: 0;
       }
 
       #check:checked~label #btn {
-        left: 250px;
+        right: 250px;
         opacity: 0;
         pointer-events: none;
       }
@@ -135,7 +140,7 @@
       }
 
       label #btn {
-        left: 40px;
+        right: 40px;
         top: 25px;
         font-size: 35px;
         color: white;
@@ -145,7 +150,7 @@
 
       label #cancel {
         z-index: 1111;
-        left: -195px;
+        right: -195px;
         top: 17px;
         font-size: 30px;
         color: #0a5275;
@@ -183,7 +188,6 @@
       }
 
       nav {
-
         width: 100%;
         height: 100vh;
       }
@@ -195,27 +199,29 @@
         width: 100%;
         height: 100%;
         flex-direction: column;
-
+        margin: 0px;
+        /* padding: 0px; */
       }
-
-
+      
+      
       #dropbox li {
+        margin: 0px;
         height: 40px;
         display: flex;
         border: none;
-
-
         justify-content: center;
         align-items: center;
         width: 60%;
-
+        background-color: #4f1919;
+        
+        /* padding: 0px; */
       }
-
+      
       nav #dropbox li a {
         border: 2px solid rgb(255, 248, 248);
         font-size: 16px;
         padding: 0px;
-        margin-top: 30px;
+        margin-top: 0px;
 
         width: 100%;
         color: white;
@@ -223,7 +229,7 @@
       }
 
       #dropbox button {
-        background-color: black;
+        
         height: 40px;
         color: white;
         width: 100px;
@@ -234,11 +240,21 @@
         right: 20px;
 
       }
-
+      #headerP p {
+      /* font-size: 1rem; */
+      text-align: center;
+      padding: 0% 0%;
+      width: 100%;
+      font-size: 16px;
+      border: 2px solid black;
+    }
+    #headerP{
+      width: 100%;
+    }
 
 
     }
-
+    /* navbar mobile section close */
     .marginicon {
       padding-left: 5px;
     }
@@ -267,22 +283,19 @@
       font-family: 'Roboto', sans-serif;
       height: 100%;
       width: 100%;
-      /* border: 2px saddlebrown solid; */
-      ;
-    }
-
-    #headerP p {
       font-size: 1rem;
       text-align: center;
       padding: 0% 1%;
-      width: 100%;
+      
     }
+
 
     #header {
       width: 100%;
       /* padding: 1% 2%; */
-      margin-top: 0.5%;
-      height: 50px;
+      margin-top: 0.2%;
+      height: 30px;
+
 
     }
 
