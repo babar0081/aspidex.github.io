@@ -104,56 +104,70 @@
       display: none;
     }
 
+    label #btn{
+      display: none;
+    }
+    label #cancel{
+      display: none;
+    }
     @media only screen and (max-width:900px) {
       /* navbar mobile section */
       
-      #check:checked~nav {
+      #check:checked~#dropbox {
         right: 0;
+        display: flex;
       }
-
+      
+      
       #check:checked~label #btn {
         right: 250px;
         opacity: 0;
-        pointer-events: none;
+        /* pointer-events: none; */
       }
-
+      
       #check:checked~label #cancel {
-        left: 195px;
+       display: block;
+       left: 100px;
       }
-
-      #check:checked~section {
-        margin-left: 250px;
-      }
-
+      
+      
+      
       label #btn,
       label #cancel {
         position: absolute;
-        background: #042331;
+        background: #4fa2c9;
         border-radius: 3px;
+        display: block;
         cursor: pointer;
       }
-
+      
       label #btn {
-        right: 40px;
-        top: 25px;
+        right: 10px;
+        top: 20px;
         font-size: 35px;
         color: white;
         padding: 6px 12px;
         transition: all .5s;
       }
-
+      
+      
       label #cancel {
         z-index: 1111;
-        right: -195px;
-        top: 17px;
+        /* right: 10px; */
+        top: 20px;
+        display: none;
         font-size: 30px;
         color: #0a5275;
         padding: 4px 9px;
         transition: all .5s ease;
       }
-
+      nav{
+        width: 100%;
+        background-color: wheat;
+        height: 50%;
+      }
       
-
+      
       nav #dropbox li:hover>a {
         
         background: none;
@@ -168,52 +182,69 @@
         list-style: none;
         
         
-
+        
       }
 
       nav #dropbox li:hover>.submenu {
         display: none;
-
+        
       }
-
+      
       nav {
         width: 100vw;
-        background-color:rgb(4, 4, 206);
+        /* background-color:rgb(4, 4, 206); */
         height: 100%;
       }
+      .logo{
+      /* background-color: white; */
+      width: 40%;
+      margin-left: 0px;
+      /* height: %; */
+      display: none;
 
+    }
+      #check:checked~#dropbox {
+        right: 10px;
+        position: absolute;
+      }
       #dropbox {
-        align-items: center;
-        display: block;
-        width: 100vw;
-
+        align-items: flex-start;
+        display: none;
+        width: 70vw;
+        transition: all 0.1s ease-in-out;
         height: 100%;
+        z-index: 111;
+        border: 2px solid rgb(207, 0, 0);
         flex-direction: column;
+        background-color:rgb(10, 255, 22);
+        /* padding-left: 20px; */
+        padding: 0px 0px 0px 20px;
         margin: 0px;
-        /* padding: 0px; */
       }
       
       
       #dropbox li {
+        /* margin-left: 20px; */
         margin: 0px;
         height: 40px;
-        display: flex;
         
-        align-items: center;
-        /* width: 100%; */
-        background: linear-gradient(45deg, #4f1919, #ff3333);
+        width: 70%;
+        border: 2px solid white;
+        background-color: none;
+        margin: 0px;
         padding: 0px;
+        
       }
       
       nav #dropbox li a {
-        border: 2px solid rgb(255, 248, 248);
+        background: linear-gradient(45deg, #4f1919, #ff3333);
         font-size: 16px;
+        border: 2px solid black;
+        width: 100%;
+        margin: 0px;
+        /* display: flex;
+        align-items: flex-end; */
         padding: 0px;
-        margin-top: 0px;
-        background-color: #0a5275;
-
-        width: 50%;
-        color: white;
 
       }
 
@@ -230,7 +261,7 @@
 
       }
       #headerP p {
-      font-size: 0.8em;
+      font-size: 0.6em;
       text-align: center;
       margin: 1% 0%;
       width: 100%;
@@ -238,10 +269,42 @@
       border: 2px solid black;
     }
     #headerP{
-      margin: 0px;
+      /* margin: 0px; */
       width: 100%;
     }
 
+    .image-wrapper {
+      width: 100%;
+      display: flex;
+      animation: slide 10s infinite;
+      border: 2px so black;
+    }
+
+    #HeaderImage {
+
+      width: 100%;
+      position: relative;
+      transform: translate(-50%, -50%);
+      top: 45%;
+      left: 50%;
+      overflow: hidden;
+      border: 10px solid #970202;
+      border-radius: 8px;
+      /* box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3); */
+
+    }
+
+    img {
+      width: 100%;
+    }
+
+    #headerBlock {
+      display: inline-block;
+      height: 80vh;
+      width: 100%;
+      /* background-color: black; */
+      /* border: 2px saddlebrown solid; */
+    }
 
     }
     /* navbar mobile section close */
@@ -285,8 +348,6 @@
       /* padding: 1% 2%; */
       margin-top: 0.2%;
       height: 30px;
-
-
     }
 
     .image-wrapper {
@@ -661,12 +722,12 @@
   <div id="page">
 
     <nav>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
       <ul id="dropbox">
-        <input type="checkbox" id="check">
-        <label for="check">
-          <i class="fas fa-bars" id="btn"></i>
-          <i class="fas fa-times" id="cancel"></i>
-        </label>
         <div class="logo">
 
         </div>
@@ -739,17 +800,21 @@
   </div>
   <!-- Header Top Heading Closed here -->
   <!-- Header Image Section -->
-  <div id="headerBlock">
-
-    <div id="HeaderImage">
+  <div id="animateddiv">
 
 
-      <div class="image-wrapper">
-        <img src="https://amsainternational.biz/items/gallery/12-inner-gallery-1.jpeg" alt="" style="width: 100%;">
-        <img src="https://amsainternational.biz/items/gallery/12-inner-gallery-1.jpeg" style="width: 100%;">
-        <img src=" https://amsainternational.biz/items/gallery/12-inner-gallery-1.jpeg" style="width: 100%;">
-        <img src=" https://amsainternational.biz/items/gallery/12-inner-gallery-1.jpeg" style="width: 100%;">
-
+    <div id="headerBlock">
+  
+      <div id="HeaderImage">
+  
+  
+        <div class="image-wrapper">
+          <img src="https://amsainternational.biz/items/gallery/12-inner-gallery-1.jpeg" alt="" style="width: 100%;">
+          <img src="https://amsainternational.biz/items/gallery/12-inner-gallery-1.jpeg" style="width: 100%;">
+          <img src=" https://amsainternational.biz/items/gallery/12-inner-gallery-1.jpeg" style="width: 100%;">
+          <img src=" https://amsainternational.biz/items/gallery/12-inner-gallery-1.jpeg" style="width: 100%;">
+  
+        </div>
       </div>
     </div>
   </div>
