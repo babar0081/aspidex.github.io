@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width:900px) {
+      /* navbar mobile section */
+      
+      #check:checked~#dropbox {
+        right: 0;
+        display: flex;
+        
+      }
+      
+      
+      #check:checked~label #btn {
+        right: 250px;
+        opacity: 0;
+        /* pointer-events: none; */
+      }
+      
+      #check:checked~label #cancel {
+       display: block;
+       left: 100px;
+      }
+      
+      
+      
+      label #btn,
+      label #cancel {
+        position: absolute;
+        background: #4fa2c9;
+        border-radius: 3px;
+        display: block;
+        cursor: pointer;
+      }
+      
+      label #btn {
+        right: 10px;
+        top: 20px;
+        font-size: 35px;
+        color: white;
+        padding: 6px 12px;
+        transition: all .5s;
+      }
+      
+      
+      label #cancel {
+        z-index: 1111;
+        /* right: 10px; */
+        top: 20px;
+        display: none;
+        font-size: 30px;
+        color: #0a5275;
+        padding: 4px 9px;
+        transition: all .5s ease;
+      }
+
+      
+      
+      
+      nav #dropbox li:hover>a {
+        
+        background: none;
+      }
+
+      #dropbox li a i {
+        display: none;
+      }
+
+      nav #dropbox .submenu li {
+        background-color: none;
+        list-style: none;
+        
+        
+        
+      }
+
+      nav #dropbox li:hover>.submenu {
+        display: none;
+        
+      }
+      
+      nav {
+        width: 100vw;
+        position: relative;
+        background-color:rgb(4, 4, 206);
+        height: 100%;
+      }
+      .logo{
+      /* background-color: white; */
+      width: 40%;
+      margin-left: 0px;
+      /* height: %; */
+      display: none;
+
+    }
+      #check:checked~#dropbox {
+        right: 10px;
+        position: absolute;
+      }
+      #dropbox {
+        align-items: flex-start;
+        display: none;
+        width: 70vw;
+        transition: all 0.1s ease-in-out;
+        height: 100%;
+        z-index: 111;
+        
+        flex-direction: column;
+        background-color:rgb(10, 255, 22);
+        
+        padding: 0px 0px 0px 20px;
+        margin: 0px;
+      }
+      
+      
+      #dropbox li {
+        
+        margin: 0px;
+        width: 70%;
+        border: 2px solid white;
+        background-color: none;
+        height: 5%;
+        
+        
+      }
+      
+      nav #dropbox li a {
+        background: linear-gradient(45deg, #4f1919, #ff3333);
+        font-size: 16px;
+        /* border: 2px solid black; */
+        width: 100%;
+        /* display: flex;
+        align-items: flex-end; */
+      }
+
+      #dropbox button {
+        
+        height: 40px;
+        color: white;
+        width: 100px;
+        position: absolute;
+        display: inline-block;
+        top: 5px;
+        border: 2px white solid;
+        right: 20px;
+
+      }
+      #headerP p {
+      font-size: 0.6em;
+      text-align: center;
+      margin: 1% 0%;
+      width: 100%;
+      /* font-size: 16px; */
+      border: 2px solid black;
+    }
+    #headerP{
+      /* margin: 0px; */
+      width: 100%;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      display: flex;
+      animation: slide 10s infinite;
+      border: 2px so black;
+    }
+
+    #HeaderImage {
+
+      width: 100%;
+      position: relative;
+      transform: translate(-50%, -50%);
+      top: 45%;
+      left: 50%;
+      overflow: hidden;
+      border: 10px solid #970202;
+      border-radius: 8px;
+      /* box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3); */
+
+    }
+
+    img {
+      width: 100%;
+    }
+
+    #headerBlock {
+      display: inline-block;
+      height: 80vh;
+      width: 100%;
+      /* background-color: black; */
+      /* border: 2px saddlebrown solid; */
+    }
+
+    }
+    </style>
+</head>
+<body>
+    
+    <div id="page">
+
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+          </label>
+          <ul id="dropbox">
+            <div class="logo">
+    
+            </div>
+            <li><a href="https://www.ebay.it/str/abbigliamentomoto" target="_blank">HOME</a></li>
+            <li><a href="">PRODUCTS <i class="fa-solid fa-caret-down marginicon"></i></a>
+              <ul class="submenu">
+                <li><a href="https://www.ebay.it/str/abbigliamentomoto/Giacca-da-moto/_i.html?store_cat=39497783011"
+                    target="_blank">JACKETS</a></li>
+                <li><a
+                    href="https://www.ebay.it/str/abbigliamentomoto/Pantaloni-protettivi-per-moto/_i.html?store_cat=43502870011"
+                    target="_blank">TROUSER</a></li>
+                <li><a href="https://www.ebay.it/str/abbigliamentomoto/Guanti-da-moto/_i.html?store_cat=39497786011"
+                    target="_blank">GLOVES</a></li>
+                <li><a href="https://www.ebay.it/str/abbigliamentomoto/Stivali-da-moto/_i.html?store_cat=39502817011"
+                    target="_blank">BOOTS</a></li>
+              </ul>
+    
+    
+    
+            </li>
+            <li><a href="">BOXING PRODUCTS <i class="fa-solid fa-caret-down marginicon"></i></a>
+              <ul class="submenu">
+                <li><a href="https://www.ebay.it/str/abbigliamentomoto/guantoni-da-boxe/_i.html?store_cat=43504448011"
+                    target="_blank">BOXING GLOVES</a></li>
+                <li><a href="">HEADGUARD</a></li>
+                <li><a href="">SHINGUARD</a></li>
+                <li><a href="">KICKPAD</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.ebay.it/cnt/intermediatedFAQ?requested=abbigliamentomoto">CONTACT US </a>
+              
+                
+                
+                  
+    
+                
+    
+            </li>
+    
+    
+           
+            <li><a href="">OTHER</a></li>
+          </ul>
+    
+    
+        </nav>
+      </div>
+</body>
+</html>
