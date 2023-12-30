@@ -117,9 +117,9 @@
         padding: 0px;
       }
       #check:checked~nav {
-        right: 0;
+        top: 0;
         visibility: visible;
-        
+        display: block;
       }
       
       
@@ -170,93 +170,111 @@
         padding: 4px 9px;
         transition: all .5s ease;
       }
-      
-      
-      
-      
+    
       nav #dropbox li:hover>a {
         
         background: none;
       }
       
       #dropbox li a i {
-        display: none;
+        display: block;
       }
       
       nav #dropbox .submenu li {
-        background-color: none;
+        background-color: blo;
         list-style: none;
-        
-        
-        
+
       }
-      
-      nav #dropbox li:hover>.submenu {
-        display: none;
+      nav #dropbox li:focus>.submenu {
+        display: block;
         
       }
       #mobilenavtop{
         background-color: black;
         width: 100%;
         display: block;
-        /* position: absolute; */
         height: 10vh;
-        /* top: 0px; */
         z-index: 111111;
       }
       nav {
-        width: 100%;
-        background-color: #363636bd;
-        height: 100vh;
-        visibility: hidden;
-        right: -500px;
+        width: 60vw;
+        background-color: #1b323d;
+        height: 40vh;
+        display: none;
+        top: -1000px;
+        overflow: hidden;
         width: 100%;
         transition: all .5s ease;
         z-index: 111;
-        position: fixed;
-        justify-content:initial;
+        
         flex-direction: column;
       }
       .logo{
-      width: 40%;
-      margin-left: 0px;
-      display: none;
-
-    }
+        width: 40%;
+        margin-left: 0px;
+        display: none;
+      }
+      
       
       #dropbox {
-       display: block;
+       display: inline-block;
        transition: all 0.1s ease-in-out;
-       padding-top: 30%;
        background: none;
-       right: -250px;
-       
+       height: 100%;
+       box-sizing: border-box;
+       /* overflow: hidden; */
+       /* border: 2px solid rgb(37, 224, 0); */
        
       }
       
       
       #dropbox li {
-        margin-top: 5%;
-        width: 100%;        
-        height:40px;
-        display: flex;
+        width: 100%;
+        /* background-color: rgb(219, 152, 152) ;        */
+        height:62px;
+        /* border: 2px solid firebrick; */
+        /* position: absolute; */
         justify-content: center;
-        text-align: center;
         transition: all 0.1s ease-in-out;
         
       }
       
       nav #dropbox li a {
         background: linear-gradient(45deg, #4f1919, #ff3333);
-        display: default;
+        display: flex;
+        justify-content: space-between;
+        /* align-content: center;  */
         font-size: 16px;
-        border: 2px solid rgb(71, 71, 68);
-        width: 50%;
-        /* margin: 5% 0px 50% 0px; */
-        height: 30px;
+        /* border: 2px solid rgb(71, 71, 68); */
+        width: 100vw;
+        padding: 0px;
         transition: .4s;
+        margin-top: 0px;
+      }
+      .marginicon{
+        padding-right: 20px;
+      }
+      nav #dropbox .submenu {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        display: none;
+        width: 100%;
+        height: 100%;
       }
 
+    nav #dropbox .submenu li {
+      background-color: rgb(160, 34, 34);
+      list-style: none;
+      height: 100%;
+      width: 100%;
+
+    }
+
+    nav #dropbox li:hover>.submenu {
+      display: block;
+
+    }
       #dropbox button {
         
         height: 40px;
@@ -288,10 +306,9 @@
     }
     #headerP{
       display: flex;
-      flex-wrap: nowrap;
+      /* flex-wrap: nowrap; */
       width: 100vw;
-      /* border: 2px solid brown; */
-    }
+        }
 
     .image-wrapper {
       width: 100%;
@@ -329,7 +346,6 @@
       justify-content: center;
       align-items: center; */
       width: 100%;
-      /* height: 50%;     */
     }
 
     #animateddiv{
@@ -836,12 +852,10 @@
 </head>
 
 <body>
-  <!-- <div class="dropdown">
-    <span>hi</span>
-    <div class="dropdown-content">
-      <p>Hello World!</p>
-    </div> -->
+  
     <div id="page">
+      <div id="mobilenavtop">
+      </div>
       
       <input type="checkbox" id="check">
       <label for="check">
@@ -855,7 +869,9 @@
         </div>
         
         <li><a href="https://www.ebay.it/str/abbigliamentomoto" target="_blank">HOME</a></li>
-        <li><a href="">PRODUCTS <i class="fa-solid fa-caret-down marginicon"></i></a>
+        <li>
+          
+          <a href="">PRODUCTS <i class="fa-solid fa-caret-down marginicon"></i></a>
           <ul class="submenu">
             <li><a href="https://www.ebay.it/str/abbigliamentomoto/Giacca-da-moto/_i.html?store_cat=39497783011"
               target="_blank">JACKETS</a></li>
@@ -899,8 +915,7 @@
     </nav>
   </div>
   <!-- Header Sections starts here -->
-  <div id="mobilenavtop">
-  </div>
+  
   <div id="header">
     
     <div id="headerP">
