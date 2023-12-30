@@ -118,7 +118,7 @@
       }
       #check:checked~nav {
         right: 0;
-        display: flex;
+        visibility: visible;
         
       }
       
@@ -153,9 +153,9 @@
       label #btn {
         right: 10px;
         top: 20px;
-        font-size: 35px;
+        font-size: 30px;
         color: white;
-        padding: 6px 12px;
+        padding: 4px 9px;
         transition: all .5s;
       }
       
@@ -195,23 +195,27 @@
         display: none;
         
       }
-      
+      #mobilenavtop{
+        background-color: black;
+        width: 100%;
+        display: block;
+        /* position: absolute; */
+        height: 10vh;
+        /* top: 0px; */
+        z-index: 111111;
+      }
       nav {
         width: 100%;
         background-color: #363636bd;
-        display: none;
         height: 100vh;
-        /* align-items: flex-start; */
-        display: none;
-        right: -300px;
+        visibility: hidden;
+        right: -500px;
         width: 100%;
         transition: all .5s ease;
-        height: 100%;
         z-index: 111;
-        position: absolute;
+        position: fixed;
         justify-content:initial;
         flex-direction: column;
-        
       }
       .logo{
       width: 40%;
@@ -219,16 +223,14 @@
       display: none;
 
     }
-      #check:checked~nav {
-        right: 10px;
-        position: absolute;
-      }
+      
       #dropbox {
        display: block;
        transition: all 0.1s ease-in-out;
        padding-top: 30%;
        background: none;
        right: -250px;
+       
        
       }
       
@@ -241,6 +243,7 @@
         justify-content: center;
         text-align: center;
         transition: all 0.1s ease-in-out;
+        
       }
       
       nav #dropbox li a {
@@ -249,7 +252,7 @@
         font-size: 16px;
         border: 2px solid rgb(71, 71, 68);
         width: 50%;
-        margin: 5% 0px 50% 0px;
+        /* margin: 5% 0px 50% 0px; */
         height: 30px;
         transition: .4s;
       }
@@ -269,26 +272,30 @@
       #headerP p {
       font-size: 0.6em;
       text-align: center;
-      background-color: #0a5275;
-      /* margin-top: 50%; */
+      background-color: #ff0b03;
       width: 100%;
+      display: flex;
+      align-items: center;
       height: 30px;
-      padding: 2%;
+      color: white;
+      font-weight: bold;
       line-height: 1;
-      white-space: inherit;
-      /* font-size: 16px; */
-      /* border: 2px solid black; */
+    }
+    #header{
+      width: 100vw;
+      padding: 0px;
+      background-color: #ff0b03;
     }
     #headerP{
-      margin-top:25%;
-      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100vw;
       /* border: 2px solid brown; */
     }
 
     .image-wrapper {
       width: 100%;
-      display: flex;
-      height: 50%;
+      height: 100%;
       animation: slide 10s infinite;
       /* border: 10px solid black; */
             
@@ -296,33 +303,40 @@
     
     #HeaderImage {
       width: 100%;
-      position: relative;
+      /* position: absolute; */
       transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
+      /* top:100%; */
+      /* left: 50%; */
       overflow: hidden;
-      height:fit-content;
+      height:50%;
+      box-sizing: border-box;
       border-radius: 8px;
       /* box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3); */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* border: 2px solid black; */
     }
-
-    img {
-      width: 100%;
-      
+    
+    .image-wrapper img{
+      height: 100%;
     }
 
     #headerBlock {
-      display: inline-block;
       /* height:5vh; */
-      padding: 0px;
-      margin: 0px;
+      /* padding: 0px 10px; */
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
       width: 100%;
-      height: 30%;    
+      /* height: 50%;     */
     }
 
     #animateddiv{
-      height: 40vh;
+      /* border: 2px saddlebrown solid; */
+      height: 50vh;
       display: flex;
+      box-sizing: border-box;
       justify-content: center;
       align-items: center;
     }  
@@ -344,7 +358,7 @@
     }
     
     #hero-LeftImg {
-      border: 2px solid rgb(34, 12, 12);
+      /* border: 2px solid rgb(34, 12, 12); */
       width: 50%;
       height: 40%;
       
@@ -357,11 +371,11 @@
     }
 
     #hero-img #hero4img img {
-      /* border: 2px solid blue; */
-      border: 2px solid #D6D6D6;
-      /* border: 1px solid rgba(119, 119, 119, 0.747); */
+      
+      border: 2px solid #000000;
+      
       height: 100%;
-      /* margin: 0px 4% 10px 4%; */
+      
       padding: 0px 2%;
       width: 100%;
     }
@@ -823,18 +837,18 @@
 
 <body>
   <!-- <div class="dropdown">
-      <span>hi</span>
-      <div class="dropdown-content">
-        <p>Hello World!</p>
-      </div> -->
-  <div id="page">
-
-    <input type="checkbox" id="check">
-    <label for="check">
-      <i class="fas fa-bars" id="btn"></i>
-      <i class="fas fa-times" id="cancel"></i>
-    </label>
-    <nav>
+    <span>hi</span>
+    <div class="dropdown-content">
+      <p>Hello World!</p>
+    </div> -->
+    <div id="page">
+      
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <nav>
       <ul id="dropbox">
         <div class="logo">
 
@@ -844,49 +858,51 @@
         <li><a href="">PRODUCTS <i class="fa-solid fa-caret-down marginicon"></i></a>
           <ul class="submenu">
             <li><a href="https://www.ebay.it/str/abbigliamentomoto/Giacca-da-moto/_i.html?store_cat=39497783011"
-                target="_blank">JACKETS</a></li>
+              target="_blank">JACKETS</a></li>
             <li><a
                 href="https://www.ebay.it/str/abbigliamentomoto/Pantaloni-protettivi-per-moto/_i.html?store_cat=43502870011"
                 target="_blank">TROUSER</a></li>
             <li><a href="https://www.ebay.it/str/abbigliamentomoto/Guanti-da-moto/_i.html?store_cat=39497786011"
                 target="_blank">GLOVES</a></li>
-            <li><a href="https://www.ebay.it/str/abbigliamentomoto/Stivali-da-moto/_i.html?store_cat=39502817011"
+                <li><a href="https://www.ebay.it/str/abbigliamentomoto/Stivali-da-moto/_i.html?store_cat=39502817011"
                 target="_blank">BOOTS</a></li>
           </ul>
-
-
-
+          
+          
+          
         </li>
         <li><a href="">BOXING PRODUCTS <i class="fa-solid fa-caret-down marginicon"></i></a>
           <ul class="submenu">
             <li><a href="https://www.ebay.it/str/abbigliamentomoto/guantoni-da-boxe/_i.html?store_cat=43504448011"
-                target="_blank">BOXING GLOVES</a></li>
-            <li><a href="">HEADGUARD</a></li>
+              target="_blank">BOXING GLOVES</a></li>
+              <li><a href="">HEADGUARD</a></li>
             <li><a href="">SHINGUARD</a></li>
             <li><a href="">KICKPAD</a></li>
           </ul>
         </li>
         <li><a href="https://www.ebay.it/cnt/intermediatedFAQ?requested=abbigliamentomoto">CONTACT US </a>
           
-            
-            
-              
-
-            
-
+          
+          
+          
+          
+          
+          
         </li>
 
 
-       
+        
         <li><a href="">OTHER</a></li>
       </ul>
-
-
+      
+      
     </nav>
   </div>
   <!-- Header Sections starts here -->
+  <div id="mobilenavtop">
+  </div>
   <div id="header">
-
+    
     <div id="headerP">
       <p>
         Free Delivery For All Orders
@@ -956,7 +972,7 @@
             <p>
               <b>Protezioni per spalle e</b>
                gomiti omologate CE.
-            </p>
+            </p>    
           </li>
           <li class="FeaturePara">
             <p> <b> Tutte le aree di cucitura per la</b> costruzione delle cuciture di sicurezza secondo lo standard EN 17092-4: 2022.
