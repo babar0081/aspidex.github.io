@@ -382,47 +382,8 @@
                 width: 100%;
               }
 
-              .header-1 {
-                width: 100%;
-                display: inline-block;
-                text-align: right;
-                background-color: #f7f7f7;
-              }
+             
 
-              .header-1 li {
-                float: left;
-                list-style-type: none;
-                margin-right: 30px;
-                padding-bottom: 0;
-              }
-
-              .header-1 li:hover {
-                cursor: pointer;
-                color: #d20000;
-              }
-
-              .header-1 ul {
-                text-align: right;
-                width: 64%;
-                display: inline-block;
-                padding: 0;
-                padding-left: 15px;
-                float: left;
-                margin-top: 11px;
-                margin-bottom: 0;
-                min-width: 600px;
-                position: relative;
-              }
-
-              img.logo_img {
-                position: absolute;
-                right: 15%;
-                top: -3px;
-              }
-
-              .top-right-black {
-                float: right;
-              }
 
               .section.section-8 {
                 background-color: #001424;
@@ -1519,7 +1480,7 @@
 
               
               
-
+              
               
 
               
@@ -1542,16 +1503,7 @@
                 text-decoration: none;
               }
 
-              .header-1 > ul > li:first-child {
-                display: none;
-              }
-
-              .header-1 li {
-                font-weight: 600;
-                font-size: 15px !important;
-                color: #000 !important;
-                text-transform: uppercase;
-              }
+          
 
               .launchpad-module {
                 max-width: 1000px;
@@ -1676,12 +1628,9 @@
                 word-break: initial;
               }
               #BrandsImages{
-                
-                
-                
-                height: 300px;
-                
-                justify-content: center;
+                /* border: 2px solid black; */
+                height: 100%;
+                width: 100%;
                 background:50% repeat transparent url(gradientbackground.png);
               }
               #gradient-Background{
@@ -1689,21 +1638,22 @@
                 justify-content: center;
                 flex-wrap: wrap;
                 line-height: 1;
+                flex-direction: row;
                 height: 100%;
                 border: 2px solid gray;
               }
-              #BrandsImages .bagde{
-                /* display: flex; */
-                width: 18%!important;
-    margin: auto 5px;
-    box-sizing: border-box;
-    height: 40%;
+              #BrandsImages .badge{
+                width: 15%;
+                margin: 5px 5px;
+                box-sizing: border-box;
+                height: 80px;
+                border: #8f9fad solid 2px;
               }
-              #BrandsImages .bagde img{
+              #BrandsImages .badge img{
                 object-fit: contain;
                 width: 100%;
                 height: 100%;
-                border: #0066c0 solid 2px;
+                
               }
               .aplus-module-wrapper {
                 text-align: left;
@@ -2793,28 +2743,7 @@
                 bottom: 68px;
               }
 
-              /* @media  only screen and(min-width:355) and (max-width:399) {
-                  .frame.p1{
-
-                    width: 65%;
-                    border: 2px solid;
-                    min-height: 95%;
-                    width: 64%;
-                    min-height: 93%;
-                    border: 2px solid;
-                    display: flex;
-    margin: 0px!important;
-    padding: 0px!important;
-                    align-items: center;
-                    justify-content: center;
-
-                  }
-                  .frame .large{
-                    border: 2px solid blac;
-
-                  }
-                
-              } */
+              
               @media only screen and (max-width: 64em) and (min-width: 52.01em) {
                 #menu li {
                   width: 33.333%;
@@ -3062,19 +2991,7 @@
               }
               
               @media (max-width: 768px) and (min-width: 320px) {
-                .header-1 ul {
-                  padding-left: 0px;
-                }
-
-                .header-1 li {
-                  float: left;
-                  list-style-type: none;
-                  margin-right: 2px;
-                  padding-bottom: 0;
-                  font-size: 14px;
-                  margin-left: 8px;
-                }
-
+            
                 .header-Banner-mobile {
                   display: block;
                   float: right;
@@ -3112,27 +3029,32 @@
 
                 .MainDiv {
                   width: 100%;
-                  margin: 0 auto;
-                  display: inline-block;
-                  height: 30px;
-                  padding: 0;
-                  background: #000000;
-                  color: #fff;
+    margin: 0 auto;
+    display: flex!important;
+    /* padding: 0; */
+    height: 60%!important;
+    margin-bottom: 3px;
+    background: #ffffff;
+    color: black;
+    flex-wrap: wrap;
                 }
 
                 .Icon span {
                   text-transform: uppercase;
+                  font-size: 10px;
+                  font-weight: bold;
                 }
                 
-                .header-1 ul li {
-                  text-decoration: none;
-                }
+                
                 
                 .Icon {
-                  font-size: 20px;
-                  float: left;
-                  margin-right: 0;
-                  padding: 5px;
+                  /* BORDER: 2PX SOLID; */
+    /* WIDTH: 100%; */
+    /* font-size: 57px!important; */
+    float: left;
+    /* margin-right: 0; */
+    padding: 5px;
+    margin: 3px;
                 }
 
                 .products-list a {
@@ -4314,9 +4236,7 @@
                 }
               }
               @media (max-width: 320px) and (min-width: 320px) {
-                .header-1 li {
-                  margin-right: -3px;
-                }
+         
               }
               @media (min-width: 768px) {
                 .switcher {
@@ -4329,28 +4249,15 @@
                 }
               }
               @media (max-width: 768px) {
-                .header-1 ul {
-                  width: auto;
-                }
-
-                .frame .big-img {
-                  width: 75%;
-                  height: 60%;
-                  top: 0px;
-                  right: 8px;
-                }
+      
+                
 
                 .frame label.thumb {
                   width: 62%;
                   height: 78px;
                 }
 
-                .frame .frame-inner {
-                  width: 126px;
-                  height: 445px;
-                  padding-top: 0px;
-                  margin-left: 8px;
-                }
+                
 
                 .section-2 .sleft {
                   margin-left: 0px;
@@ -4360,30 +4267,109 @@
                   right: -15px;
                 }
               }
-              @media (min-width:364px) and (max-width:622px) {
-                .frame-inner  .p1{
-                  min-height: 92%!important;
-                  border: 2px solid ;
-                  width: 70% ;
-                margin-top: 20px ;
+              @media (min-width:320px) and (max-width:622px) {
+                .frame-inner  .big-img{
+                  height:95%;
+                  z-index: 11111;
+                  width: 60%;   
+                  
+                  
+                  
+                }
+                .frame-inner{
+
+                  width: 30%!important;
+
+
+
+                  margin: 0px auto;
                 }
                 .frame-inner .p1 img{
+                  /* border: 2px solid black; */
                   width: 100%;
                   height: 100%;
-                  margin: 0px;
+                  padding: 0px !important;
+                  margin: 0px auto;
+                  object-fit: contain;
                 }
-                .frame-inner .lab1{
+
+                .frame-inner .p2 img{
+                  /* border: 2px solid black; */
+                  width: 100%;
+                  height: 100%;
+                  padding: 0px !important;
+                  margin: 0px auto;
+                  object-fit: contain;
+                }.frame-inner .p3 img{
+                  /* border: 2px solid black; */
+                  width: 100%;
+                  height: 100%;
+                  padding: 0px !important;
+                  margin: 0px auto;
+                  object-fit: contain;
+                }.frame-inner .p4 img{
+                  /* border: 2px solid black; */
+                  width: 100%;
+                  height: 100%;
+                  padding: 0px !important;
+                  margin: 0px auto;
+                  object-fit: contain;
+                }
+
+              }
+
+              @media (min-width:300px) and (max-width:319px){
+                .sleft{
+                  width: 100%!important;
+                  /* border: 2px solid black; */
+                }
+                .frame{
+                  /* border: 2px solid black; */
+                  width: 100%!important;
+                }
+                .frame .big-img img{
+                  margin: 0px;
+                  object-fit: contain;
+                  height: 100%;
+                  width: 95%;
+                  /* border: 2px solid black!important; */
+                }
+                .frame-inner{
+                  /* border: 2px solid black; */
+                  width: 25% !important;
+                }
+                .frame-inner .big-img{
+                  /* border: 2px solid black!important; */
+                  width: 70%;
+                  margin: 0px auto;
+                  height: 100%;
+                }
+                
+
+
+              }
+              @media only screen and (min-width:300px) and (max-width:373) {
+                
+                .frame .frame-inner {
+                  border: 2px solid black;
+                }
+                .frame-inner .big-img{
+                  border: 2px solid black!important;
                   
+                }
+                .frame-inner .p1{
+                  
+                  border: 2px solid black !important;
                 }
               }
 
               @media (max-width: 640px) and (max-width: 640px) {
-                .frame .big-img {
+                /* .frame .big-img {
                   width: 70%;
                   height: 60%;
                   top: 0px;
                   right: 8px;
-                }
+                } */
 
                 .section-3 .sleft,
                 .section-3 .ReviewsRight {
@@ -4408,43 +4394,48 @@
                   font-size: 20px;
                 }
               }
-              @media (max-width: 823px) and (max-width: 823px) {
-                .header-1 ul {
-                  width: 85%;
-                }
-
-                .frame .big-img {
-                  width: 75%;
-                  height: 60%;
-                  top: 0px;
-                  right: 8px;
-                }
+              /* @media  (max-width: 823px) {
+         
+               
 
                 .frame label.thumb {    
                   width: 62%;
                   height: 78px;
                 }
+                
+                  .frame .big-img{
 
+                    width: 65%;
+                    border: 2px solid;
+                    min-height: 95%;
+                    width: 64%;
+                    height: 100%;
+                    min-height: 93% !important;
+                    border: 2px solid;
+                    display: flex;
+                     margin: 0px!important;
+                    padding: 0px!important;
+                    align-items: center;
+                    justify-content: center;
+
+                  }
+                  .frame .large{
+                    border: 2px solid blac;
+
+                  }
+                
+              
                 .frame .frame-inner {
                   width: 90px;
-                  /* border: 2px solid black; */
+                  border: 2px solid black;
                   height: 445px;
-                  /* padding-top: 0px; */
+                  padding-top: 0px;
                   margin-right:10px;
                 }
-              }
+              } */
 
-              @media (max-width: 320px) and (min-width: 320px) {
-                .header-1 li {
-                  font-size: 12px;
-                }
-              }
 
-              @media (max-width: 375px) and (min-width: 375px) {
-                .header-1 li {
-                  font-size: 12px;
-                }
-              }
+          
 
               @media (max-width: 768px) and (min-width: 320px) {
                 .section-6 .s5item span {
@@ -4453,10 +4444,7 @@
               }
 
               @media (max-width: 414px) and (min-width: 414px) {
-                .header-1 li {
-                  font-size: 13px;
-                }
-
+              
                 .section-3 .sleft,
                 .section-3 .ReviewsRight {
                   width: 100%;
@@ -4473,12 +4461,7 @@
               }
 
               @media (max-width: 1024px) and (min-width: 1024px) {
-                .frame .big-img {
-                  width: 75%;
-                  height: 60%;
-                  top: 0px;
-                  right: 8px;
-                }
+                
 
                 .frame label.thumb {
                   width: 62%;
@@ -4500,29 +4483,16 @@
                 }
               }
 
-              @media (max-width: 411px) {
-                .header-1 li {
-                  font-size: 11px;
-                }
-              }
 
               @media (max-width: 768px) {
-                .header-1 ul {
-                  width: 76%;
-                }
+            
 
-                .header-1 li {
-                  margin-left: 7px;
-                  margin-right: 0px;
-                }
-
-                .header-1 ul {
-                  margin-top: 12px;
-                }
+              
 
                 .section {
                   margin: 0px 0;
                 }
+                
 
                 .section-6 .s5item span {
                   font-size: 16px;
@@ -4761,11 +4731,7 @@
                   width: 80%;
                 }
 
-                .header-1 ul {
-                  margin-top: 12px;
-                  min-width: 340px;
-                  margin: 8px;
-                }
+               
 
                 .section-1 .sleft {
                   margin-left: 0px;
@@ -4787,9 +4753,7 @@
                   height: auto;
                 }
 
-                .frame .big-img {
-                  min-height: 370px;
-                }
+                
 
                 .section-1 .ReviewsRight {
                   width: 100%;
@@ -4922,9 +4886,7 @@
                   width: 100%;
                 }
 
-                img.logo_img {
-                  display: none;
-                }
+          
 
                 .a-color-secondary {
                   font-weight: bold;
@@ -4952,6 +4914,332 @@
                   min-width: auto !important;
                 }
               }
+
+              @media only screen and (min-width:300px) and (max-width:505px){
+                #BrandsImages{
+                  
+                  /* border: 2px solid black !important; */
+                }
+                .badge{
+                  display: flex;
+                  flex-direction: row;
+                  /* height: 80px !important; */
+                  width: 40% !important;
+                }
+              
+
+
+              }
+              
+
+              .productimages {
+                margin-top: 30px;
+      height: 100%;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+    }
+    .imgheading {
+      background-color: black;
+      width: 70%;
+      height: 50px;
+    }
+
+    .imgheading h1 {
+      color: rgb(255, 255, 255);
+      /* text-align: center; */
+      /* border: 2px rgb(146, 123, 107) solid; */
+      height: 100%;
+      margin: auto 0px;
+      align-items: center;
+      font-size: 1em;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .imgproduct {
+      /* border: 2px solid black; */
+      height: 40%;
+      width: 70%;
+      display: flex;
+      /* background-color: blueviolet; */
+      align-items: center;
+      justify-content: center;
+    }
+
+    .imgproduct .bor img {
+      object-fit: fill;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80%;
+      width: 100%;
+      border: 2px solid burlywood;
+      /* margin: 0% 10px; */
+    }
+
+    .bor {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 00px 10px 10px 10px;
+      height: 100%;
+      width: 100%;
+    }
+
+    .imgheading2 {
+      background-color: black;
+      width: 70%;
+      height: 50px;
+    }
+
+    .imgheading2 h1 {
+      color: rgb(255, 251, 243);
+      
+      background-color: black;
+      font-size: 1.3em;
+      height: 100%;
+      margin: auto 0px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .imgproduct {
+      /* border: 2px solid black; */
+      height: 40%;
+      width: 70%;
+      display: flex;
+      /* background-color: blueviolet; */
+      align-items: center;
+      justify-content: center;
+    }
+
+    .imgproduct .bor img {
+      object-fit: fill;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80%;
+      width: 100%;
+      border: 2px solid burlywood;
+      /* margin: 0% 10px; */
+    }
+
+    .bor {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 10px 10px 10px;
+      height: 100%;
+      width: 100%;
+
+
+
+    }
+
+    /* .img {
+      height: 100%;
+      width: 200px;
+      object-fit: fill;
+    } */
+
+    .product2ndsection {
+
+
+      height: 100vh;
+      display: flex;
+      width: 100%;
+      margin-top: 2%;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .margindiv {
+      margin-top: 1%;
+      padding-bottom: 1%;
+    }
+
+    .product2ndsection {
+
+
+      height: 100vh;
+      display: flex;
+      width: 100%;
+      margin-top: 2%;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .margindiv {
+      margin-top: 1%;
+      padding-bottom: 1%;
+    }
+
+
+    @media screen and (min-width:300px) and (max-width:500px) {
+      .productimages{
+        
+        height: 120vh;
+      }
+
+      .imgheading {
+              height: 55px !important;
+                width: 80%;
+    }
+
+    .imgheading h1 {
+      
+      
+      font-size: 0.8em;
+      
+      margin: auto 0px;
+      
+      
+
+    }
+    .imgheading2{
+      height: 55px !important;
+      border: 2px solid black;
+      display: block;
+      width: 80%;
+      
+    }
+    .imgheading2 h1{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-self: center;
+      height: 100%;
+      background-color: black;
+      color: white;
+      
+      font-size: 0.8em;
+    }
+    .imgproduct {
+      
+      height: 40%;
+      width: 70%;
+      display: flex;
+      
+      
+    }
+
+    .imgproduct .bor img {
+      object-fit: fill;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80%;
+      width: 70%;
+      border: 2px solid burlywood;
+      /* margin: 0% 10px; */
+    }
+
+    .bor {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 10px 10px 10px;
+      height: 100%;
+      width: 100%;
+    }
+
+    
+
+    
+
+    .imgproduct {
+      height: 80%;
+      width: 100%;
+      /* background-color: blueviolet; */
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 1;
+    flex-direction: row;
+      /* flex-wrap: wrap; */
+      justify-content: center;
+    }
+    
+    
+    
+    .bor {
+      height: 100px;
+      width: 40%;
+    }
+
+    
+
+    
+
+    .margindiv {
+      margin-top: 5% !important;
+      padding-bottom: 1%;
+    }
+
+    
+
+    
+  }
+
+  @media only screen and (min-width:501px) and (max-width:800px){
+    .imgheading2 {
+  font-size: 0.8em;
+  
+  }
+    
+.product2ndsection{
+  
+  height: 60vh;
+}
+.imgproduct{
+  width: 100%;
+}
+
+.imgproduct .bor img{
+  height: 100%;
+  
+}
+.margindiv{
+  margin-top: 45px;
+}
+
+}
+@media only screen and (min-width:506px) and (max-width:605px){
+
+  #BrandsImages .badge{
+  
+  width: 35%;
+
+}  
+      
+}
+@media only screen and (min-width:606px) and (max-width:1024px){
+
+#BrandsImages .badge{
+
+  width: calc(25% - 15px)
+
+}  
+
+}
+@media only screen and (max-width: 768px){
+  .section{
+    /* margin-top: 100px!important; */
+  }
+  .mobilemargin{
+    margin-top: 35%;
+  }
+}
             </style>
             <!-- <link href="style.css" rel="stylesheet"> -->
           </font>
@@ -5405,42 +5693,70 @@
             <div id="BrandsImages" >
               <div id="gradient-Background">
                   
-                <div class="bagde">
-                  <img src="c.jpg" alt="">
+                <div class="badge">
+                  <img src="/brand1.jpg" alt="">
                 </div>
-                <div class="bagde">
-                  <img src="c.jpg" alt="">
+                  
+                <div class="badge">
+                  <img src="/brand2.jpg" alt="">
                 </div>
-                <div class="bagde">
-                  <img src="c.jpg" alt="">
+                  
+                <div class="badge">
+                  <img src="/brand3.jpg" alt="">
                 </div>
-                <div class="bagde">
-                  <img src="c.jpg" alt="">
+                  
+                <div class="badge">
+                  <img src="/brand4.jpg" alt="">
                 </div>
-                <div class="bagde">
-                  <img src="c.jpg" alt="">
+                  
+                <div class="badge">
+                  <img src="/brand5.jpg" alt="">
                 </div>
-                <div class="bagde">
-                  <img src="c.jpg" alt="">
+                  
+                <div class="badge">
+                  <img src="/brand6.jpg" alt="">
+                </div>
+                  
+                <div class="badge">
+                  <img src="brand7.jpg" alt="">
+                </div>
+                  
+                <div class="badge">
+                  <img src="/brand8.jpg" alt="">
+                </div>
+                <div class="badge">
+                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
+                </div>
+                <div class="badge">
+                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
+                </div>
+                <div class="badge">
+                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
+                </div>
+                <div class="badge">
+                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
+                </div>
+                <div class="badge">
+                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
                 </div>
                 
-                <div class="bagde">
-                  <img src="c.jpg" alt="">
+                <div class="badge">
+                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
                 </div>
-                <div class="bagde">
-                  <img src="c.jpg" alt="">
+                <div class="badge">
+                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
                 </div>
-                <div class="bagde">
-                  <img src="c.jpg" alt="">
+                <div class="badge">
+                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
                 </div>
-                <div class="bagde">
-                  <img src="c.jpg" alt="">
+                <div class="badge">
+                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
                 </div>
               </div>
               
 
             </div>
-            <div class="celwidget aplus-module module-5"cel_widget_id="aplus-module-5" data-cel-widget="aplus-module-5">
+            <!-- <div class="celwidget aplus-module module-5"cel_widget_id="aplus-module-5" data-cel-widget="aplus-module-5">
               
                 <div class="aplus-module-wrapper">
                   <div class="apm-spacing aplus-module-content">
@@ -5599,8 +5915,8 @@
                                 <img
                                 class="Imgborders"
                                   src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
+                                  />
                                   width="148.0px"
-                                />
                               </a>
                             </th>
                           </tr>
@@ -5617,6 +5933,153 @@
                   <div style="clear: both"></div>
                 </font>
               </font>
+            </div> -->
+
+            <div class="productimages">
+              <div class="imgheading">
+                <h1>OUR MOST SELLING PRODUCTS</h1>
+              </div>
+              <div class="imgproduct">
+                
+                <a class="bor " href="https://www.ebay.it/itm/363910085649" target="_blank">
+                  <img
+                                class="Imgborders"
+                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
+                                  />
+                </a>
+              
+              
+              
+              
+                <a class="bor" href="https://www.ebay.it/itm/363454218559" target="_blank">
+                  <img
+                                class="Imgborders"
+                                  src="https://i.ebayimg.com/images/g/7tIAAOSw7qpll-IQ/s-l500.jpg"
+                                  />
+                </a>
+              
+                <a class="bor" href="https://www.ebay.it/itm/363925500036" target="_blank">
+                      
+                  <img
+                                class="Imgborders"
+                                  src="https://i.ebayimg.com/images/g/AcUAAOSwVMlll-K6/s-l500.jpg"
+                                  />
+                </a>
+              
+              
+                <a class="bor" href="https://www.ebay.it/itm/363812796858" target="_blank">
+                      
+                  <img
+                                class="Imgborders"
+                                  src="https://i.ebayimg.com/images/g/xBMAAOSw~O1ll-P3/s-l500.jpg"
+                                  />
+                </a>
+              
+              
+                <a class="bor" href="https://www.ebay.it/itm/363887813758" target="_blank">
+                  <img
+                                class="Imgborders"
+                                  src="https://i.ebayimg.com/images/g/rz8AAOSwmvRll-Sa/s-l500.jpg"
+                                  />
+              
+                </a>
+              
+              
+              <a class="bor"  href="https://www.ebay.it/itm/363919011106
+                              " target="_blank">
+                      
+                                <img
+                                class="Imgborders"
+                                  src="https://i.ebayimg.com/images/g/JaQAAOSwMJ1ll-Vm/s-l500.jpg"
+                                  />
+                      
+                      
+                      
+                              </a>
+               
+                
+              
+                
+              </div>
+        
+        
+              
+                <div class="imgheading2">
+        
+                  <h1> OUR OTHER ITEMS</h1>
+        
+                </div>
+        
+                <div class="imgproduct">
+                
+                  <a class="bor " href="https://www.ebay.it/itm/363910085649" target="_blank">
+                    <img
+                                  class="Imgborders"
+                                    src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
+                                    />
+                  </a>
+                
+                
+                
+                
+                  <a class="bor" href="https://www.ebay.it/itm/363454218559" target="_blank">
+                    <img
+                                  class="Imgborders"
+                                    src="https://i.ebayimg.com/images/g/7tIAAOSw7qpll-IQ/s-l500.jpg"
+                                    />
+                  </a>
+                
+                  <a class="bor" href="https://www.ebay.it/itm/363925500036" target="_blank">
+                        
+                    <img
+                                  class="Imgborders"
+                                    src="https://i.ebayimg.com/images/g/AcUAAOSwVMlll-K6/s-l500.jpg"
+                                    />
+                  </a>
+                
+                
+                  <a class="bor" href="https://www.ebay.it/itm/363812796858" target="_blank">
+                        
+                    <img
+                                  class="Imgborders"
+                                    src="https://i.ebayimg.com/images/g/xBMAAOSw~O1ll-P3/s-l500.jpg"
+                                    />
+                  </a>
+                
+                
+                  <a class="bor" href="https://www.ebay.it/itm/363887813758" target="_blank">
+                    <img
+                                  class="Imgborders"
+                                    src="https://i.ebayimg.com/images/g/rz8AAOSwmvRll-Sa/s-l500.jpg"
+                                    />
+                
+                  </a>
+                
+                
+                <a class="bor"  href="https://www.ebay.it/itm/363919011106
+                                " target="_blank">
+                        
+                                  <img
+                                  class="Imgborders"
+                                    src="https://i.ebayimg.com/images/g/JaQAAOSwMJ1ll-Vm/s-l500.jpg"
+                                    />
+                        
+                        
+                        
+                                </a>
+                 
+                  
+                
+                  
+                </div>
+        
+                </div>
+        
+        
+        
+        
+              
+        
             </div>
             <font rwr="1" style="font-family: Arial" size="4">
               <font rwr="1" style="font-family: Arial" size="4">
@@ -5629,7 +6092,7 @@
               <font rwr="1" style="font-family: Arial" size="4"> </font>
             </font>
           </font>
-          <div class="section section-7">
+          <div class="section section-7 mobilemargin">
             <font rwr="1" style="font-family: Arial" size="4">
               <font rwr="1" style="font-family: Arial" size="4">
                 <font rwr="1" style="font-family: Arial" size="4">
@@ -5867,5 +6330,4 @@
 </table>
 
 
-<!-- 354
-552 -->
+<!-- 506 sy 605 -->
