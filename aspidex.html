@@ -123,15 +123,11 @@
               .MainDiv {
                 width: 100%;
                 margin: 0 auto;
-                display: inline-block;
+                display: flex;
                 padding: 14px;
                 background-color: #fff;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                width: 100%;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
+
+                
                 justify-content: center;
               }
 
@@ -139,7 +135,9 @@
                 float: left;
                 margin-right: 10px;
                 text-align: start;
+                /* border: 2px solid black; */
                 text-transform: uppercase;
+                margin: 0px 2%;
               }
 
               .Icon:last-child {
@@ -153,7 +151,8 @@
 
               .Icon span {
                 vertical-align: super;
-                font-size: 13px;
+                font-size: 1em;
+                font-weight: bold;
               }
 
               .top-Banner img {
@@ -414,7 +413,7 @@
               .NavbarMain {
                 display: inline-block;
                 width: 100%;
-                background: #001424;
+                background: #000000;
               }
 
               #menu ul {
@@ -479,7 +478,7 @@
 
               #menu,
               #toggle-menu {
-                background-color: #09c;
+                
               }
 
               #toggle-menu,
@@ -650,7 +649,7 @@
                 padding: 0 1em;
                 color: #2c3e50;
                 background: white;
-                transition: all 0.35s;
+                transition: all 0.35s ease-in-out;
               }
 
               .RecivingYourItem .tab-close {
@@ -681,12 +680,15 @@
                 text-align: left;
               }
 
-              .RecivingYourItem input ~ .tab-content img {
-                display: none;
+              .RecivingYourItem input ~ .tab-content  {
+                /* display: none; */
+                opacity: 0;
               }
 
-              .RecivingYourItem input:checked ~ .tab-content img {
-                display: block;
+              .RecivingYourItem input:checked ~ .tab-content  {
+                /* display: block; */
+                opacity: 1;
+                transition: opacity 0.5s ease-in-out;
               }
 
               /* accordion css end */
@@ -815,7 +817,7 @@
               
 
               #menu a {
-                background-color: #001424;
+                background-color: #000000;
                 color: #fff;
                 text-decoration: none;
               }
@@ -828,7 +830,7 @@
 
               #menu,
               #toggle-menu {
-                background-color: #001424;
+                background-color: #000000;
                 color: #fff;
               }
 
@@ -1655,16 +1657,9 @@
                 height: 100%;
                 
               }
-              .aplus-module-wrapper {
-                text-align: left;
-                display: inline-block;
-                width: 94%;
-              }
+              
 
-              .weblabRtl .aplus-module-wrapper {
-                text-align: inherit;
-                display: inline-block;
-              }
+             
 
               .aplus-module.module-1,
               .aplus-module.module-2,
@@ -2055,18 +2050,9 @@
               }
 
               /* A+ Template - Module 5 Specific CSS */
-              .apm-tablemodule {
-                text-align: left;
-                margin: 0 auto;
-                width: 90%;
-              }
+             
 
-              table.apm-tablemodule-table {
-                border-bottom: 1px solid #dddddd;
-                width: 970px;
-                left: 4%;
-                table-layout: fixed;
-              }
+             
 
               th.apm-tablemodule-keyhead {
                 border-top: 1px solid #dddddd;
@@ -2102,41 +2088,20 @@
                 border-right: 1px solid #dddddd;
               }
 
-              .apm-tablemodule-blankkeyhead {
-                border: 0 !important;
-                width: 18%;
-              }
+             
 
-              .apm-tablemodule-image {
-                background-color: #ffffff;
-                padding: 0 !important;
-                text-align: center;
-                overflow: hidden;
-                
-                vertical-align: bottom;
-              }
-
+            
               
                 .Imgborders{
                   border: 2px solid black!important;
                 }
                 
               
-              .apm-tablemodule-imagerows > td > img {
-                max-width: none !important;
-              }
+              
 
-              table.apm-tablemodule-table {
-                margin-bottom: 6px !important;
-              }
+            
 
-              table.apm-tablemodule-table th {
-                padding-bottom: 8px;
-                text-align: center;
-                padding-top: 8px;
-                font-size: 13px;
-                border: none;
-              }
+             
 
               .apm-checked {
                 text-align: center;
@@ -2728,14 +2693,9 @@
 
               
 
-              .aplus-module {
-                min-width: 100%;
-                margin-left: -21px;
-              }
+              
 
-              table.apm-tablemodule-table th {
-                padding: 0 18px 0 0 !important;
-              }
+             
 
              
 
@@ -3029,19 +2989,19 @@
 
                 .MainDiv {
                   width: 100%;
-    margin: 0 auto;
-    display: flex!important;
-    /* padding: 0; */
-    height: 60%!important;
-    margin-bottom: 3px;
-    background: #ffffff;
-    color: black;
-    flex-wrap: wrap;
+                margin: 0 auto;
+                display: flex!important;
+                padding: 0;
+                height: 60%!important;
+                
+                background: #e4e4e4;
+                color: black;
+                flex-wrap: wrap;
                 }
 
                 .Icon span {
                   text-transform: uppercase;
-                  font-size: 10px;
+                  font-size: 0.8em;
                   font-weight: bold;
                 }
                 
@@ -3078,33 +3038,26 @@
                   background: #fff;
                 }
 
-                .MainDiv {
-                  padding: 10px 10px;
-                }
 
                 .Icon i {
                   font-size: 13px;
                   color: #fff;
                 }
 
-                .MainDiv {
+                /* .MainDiv {
                   width: 100%;
                   margin: 0 auto;
                   display: inline-block;
                   padding: 0;
                   background: #ffffff;
                   color: black;
-                }
+                } */
 
                 .FreeDeliveryDiv {
                   width: 100%;
                 }
 
-                .Icon span {
-                  text-transform: uppercase;
-                  font-size: 8px;
-                  vertical-align: middle;
-                }
+                
 
                 .NavbarMain {
                   text-align: left;
@@ -4270,11 +4223,11 @@
               @media (min-width:320px) and (max-width:622px) {
                 .frame-inner  .big-img{
                   height:95%;
-                  z-index: 11111;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
                   width: 60%;   
-                  
-                  
-                  
+                                   
                 }
                 .frame-inner{
 
@@ -4283,6 +4236,9 @@
 
 
                   margin: 0px auto;
+                }
+                .frame .big-img img{
+                  bottom: 5% !important;
                 }
                 .frame-inner .p1 img{
                   /* border: 2px solid black; */
@@ -4318,36 +4274,6 @@
 
               }
 
-              @media (min-width:300px) and (max-width:319px){
-                .sleft{
-                  width: 100%!important;
-                  /* border: 2px solid black; */
-                }
-                .frame{
-                  /* border: 2px solid black; */
-                  width: 100%!important;
-                }
-                .frame .big-img img{
-                  margin: 0px;
-                  object-fit: contain;
-                  height: 100%;
-                  width: 95%;
-                  /* border: 2px solid black!important; */
-                }
-                .frame-inner{
-                  /* border: 2px solid black; */
-                  width: 25% !important;
-                }
-                .frame-inner .big-img{
-                  /* border: 2px solid black!important; */
-                  width: 70%;
-                  margin: 0px auto;
-                  height: 100%;
-                }
-                
-
-
-              }
               @media only screen and (min-width:300px) and (max-width:373) {
                 
                 .frame .frame-inner {
@@ -4508,9 +4434,7 @@
                   width: 100%;
                 }
 
-                .aplus-module-wrapper {
-                  width: 100%;
-                }
+               
 
                 .apm-leftimage {
                   float: none;
@@ -4520,9 +4444,7 @@
                   width: 100%;
                 }
 
-                html[dir="rtl"] .aplus-module-wrapper {
-                  width: 100%;
-                }
+               
 
                 html[dir="rtl"] .apm-leftimage {
                   float: none;
@@ -4697,17 +4619,13 @@
                 }
 
                 /* Module5 Media Queries */
-                table.apm-tablemodule-table {
-                  width: 100%;
-                }
+               
 
                 .apm-tablemodule-valuecell {
                   width: auto;
                 }
 
-                html[dir="rtl"] table.apm-tablemodule-table {
-                  width: 100%;
-                }
+               
 
                 html[dir="rtl"] .apm-tablemodule-valuecell {
                   width: auto;
@@ -4728,6 +4646,7 @@
                 }
 
                 #toggle-menu {
+                 display: flex;
                   width: 80%;
                 }
 
@@ -4803,11 +4722,8 @@
                   max-height: none !important;
                 }
 
-                .aplus-module,
-                .apm-fixed-width {
-                  min-width: 100%;
-                  width: 100%;
-                }
+                
+              
 
                 .apm-spacing {
                   max-width: 100%;
@@ -4880,11 +4796,7 @@
                   overflow-x: hidden !important;
                 }
 
-                .apm-tablemodule {
-                  text-align: left;
-                  margin: 0 auto;
-                  width: 100%;
-                }
+               
 
           
 
@@ -4916,10 +4828,7 @@
               }
 
               @media only screen and (min-width:300px) and (max-width:505px){
-                #BrandsImages{
-                  
-                  /* border: 2px solid black !important; */
-                }
+              
                 .badge{
                   display: flex;
                   flex-direction: row;
@@ -5135,8 +5044,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 80%;
-      width: 70%;
+      height: 100%;
+      width: 100%;
       border: 2px solid burlywood;
       /* margin: 0% 10px; */
     }
@@ -5147,8 +5056,8 @@
       align-items: center;
       justify-content: center;
       margin: 20px 10px 10px 10px;
-      height: 100%;
-      width: 100%;
+      height: 40%;
+      width: 21%;
     }
 
     
@@ -5172,11 +5081,6 @@
     
     
     
-    .bor {
-      height: 100px;
-      width: 40%;
-    }
-
     
 
     
@@ -5233,1101 +5137,108 @@
 
 }
 @media only screen and (max-width: 768px){
-  .section{
-    /* margin-top: 100px!important; */
-  }
+  
   .mobilemargin{
     margin-top: 35%;
   }
 }
+
+@media only screen and (min-width:10px) and (max-width:334px){
+.sleft{
+  width: 100% !important;
+}
+
+.product-slider{
+  width: 100%;
+}
+
+                .frame{
+                  
+                  width: 100%!important;
+                }
+               
+                .frame-inner{
+                  /* border: 2px solid black; */
+                  width: 25% !important;
+                }
+                /* .frame-inner .big-img{
+                  border: 2px solid black!important;
+                  width: 70%;
+                  margin: 0px auto;
+                  height: 100%;
+                } */
+
+
+
+
+.frame .big-img{
+  width: 69%;
+  left: -0px !important;
+  height: 96%;
+  /* top: 0px !important; */
+}
+.frame .frame-inner{
+  width: 101px !important;
+}
+.frame .big-img img{
+    margin: 0px;
+    object-fit: contain;
+    height: 100%;
+    width: 95%;
+    bottom: 0px;
+
+}
+#BrandsImages {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#BrandsImages .badge{
+  width: 74% !important;
+  height: 70px !important;
+}
+.productimages{
+  height: 100vh;
+  width: 92%;
+}
+.imgproduct{
+  flex-wrap:wrap ;
+  height: 100vh;
+  width: 95%;
+}
+.imgheading{
+  width: 87% !important;
+  text-align: center;
+}
+.imgheading2{
+  width: 87% !important;
+}
+.bor{
+  height: 40%!important;
+  width: 24%;
+}
+.imgheading2 h1{
+  font-size: 1em;
+}
+
+.section-7 h2{
+  margin-left:17px ;
+  font-size: 1em;
+}
+.ReviewsRight{
+  width: 89%;
+}
+.section .section-8{
+  width: 89%;
+}
+}
             </style>
             <!-- <link href="style.css" rel="stylesheet"> -->
-          </font>
-          <div class="Main1">
-            <font rwr="1" style="font-family: Arial" size="4">
-              <!-- ======= Main Menu start ======= -->
-              <div class="NavbarMain">
-                <nav id="menu">
-                  <label for="tm" id="toggle-menu"
-                    ><i class="fa fa-bars"></i>
-                    <div class="header-banner-mobile"></div>
-                  </label>
-                  <input type="checkbox" id="tm" />
-                  <ul class="main-menu clearfix">
-                    <li >
-                      <a
-                        href="https://www.ebay.it/str/abbigliamentomoto"
-                        target="_blank"
-                      >
-                        <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit">HOME</font>
-                        </font>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit"
-                            >PRODUCTS</font
-                          > </font
-                        ><span class="drop-icon">
-                          <font style="vertical-align: inherit">
-                            <font style="vertical-align: inherit">▾</font>
-                          </font>
-                        </span>
-                        <label
-                          title="Toggle Drop-down"
-                          class="drop-icon"
-                          for="sm1"
-                        >
-                          <font style="vertical-align: inherit">
-                            <font style="vertical-align: inherit">▾</font>
-                          </font>
-                        </label>
-                      </a>
-                      <input type="checkbox" id="sm1" />
-                      <ul class="sub-menu">
-                        <li>
-                          <a
-                            a=""
-                            href="https://www.ebay.it/str/abbigliamentomoto/Giacca-da-moto/_i.html?store_cat=39497783011"
-                            target="_blank"
-                          >
-                            <font style="vertical-align: inherit">
-                              <font style="vertical-align: inherit">
-                                JACKETS
-                              </font>
-                            </font>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.ebay.it/str/abbigliamentomoto/Pantaloni-protettivi-per-moto/_i.html?store_cat=43502870011"
-                            target="_blank"
-                          >
-                            <font style="vertical-align: inherit">
-                              <font style="vertical-align: inherit">
-                                TROUSERS
-                              </font>
-                            </font>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.ebay.it/str/abbigliamentomoto/Guanti-da-moto/_i.html?store_cat=39497786011"
-                            target="_blank"
-                          >
-                            <font style="vertical-align: inherit">
-                              <font style="vertical-align: inherit">
-                                GLOVES
-                              </font>
-                            </font>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.ebay.it/str/abbigliamentomoto/Stivali-da-moto/_i.html?store_cat=39502817011"
-                            target="_blank"
-                          >
-                            <font style="vertical-align: inherit">
-                              <font style="vertical-align: inherit">
-                                BOOTS
-                              </font>
-                            </font>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a>
-                        <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit"
-                            >BOXING PRODUCTS
-                          </font> </font
-                        ><span class="drop-icon">
-                          <font style="vertical-align: inherit">
-                            <font style="vertical-align: inherit">▾</font>
-                          </font>
-                        </span>
-                        <label
-                          title="Toggle Drop-down"
-                          class="drop-icon"
-                          for="sm2"
-                        >
-                          <font style="vertical-align: inherit">
-                            <font style="vertical-align: inherit">▾</font>
-                          </font>
-                        </label>
-                      </a>
-                      <input type="checkbox" id="sm2" />
-                      <ul class="sub-menu">
-                        <li>
-                          <a
-                            href="https://www.ebay.it/str/abbigliamentomoto/guantoni-da-boxe/_i.html?store_cat=43504448011"
-                            target="_blank"
-                          >
-                            BOXING GLOVES
-                          </a>
-                        </li>
-                        <li>
-                          <a> HEADGUARD </a>
-                        </li>
-                        <li>
-                          <a> SHINGUARD </a>
-                        </li>
-                        <li>
-                          <a> KICKPAD </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li>
-                      <a>
-                        Contact Us
-                        <span class="drop-icon"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        OTHER
-
-                        <span class="drop-icon"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </font>
-            <div class="FreeDeliveryDiv">
-              <font rwr="1" style="font-family: Arial" size="4">
-                <div class="MainDiv">
-                  <div class="Icon">
-                    <span> Free Delivery For All Orders </span>
-                  </div>
-                  <div class="Icon">
-                    <span> Free Delivery For All Orders </span>
-                  </div>
-                  <div class="Icon">
-                    <span> Free Delivery For All Orders </span>
-                  </div>
-                  <div class="Icon">
-                    <span> Free Delivery For All Orders </span>
-                  </div>
-                </div>
-                <!-- ======= Main Slider start ======= -->
-                <div class="Animatedimages">
-                  <div class="AnimatedImagesDiv">
-                    <div id="Banner">
-                      <figure class="ImageWrapper">
-                        <figure>
-                          <a target="_blank">
-                            <img
-                              src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg"
-                          /></a>
-                        </figure>
-                        <figure>
-                          <a target="_blank">
-                            <img
-                              src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg"
-                          /></a>
-                        </figure>
-                        <figure>
-                          <a target="_blank">
-                            <img
-                              src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg"
-                          /></a>
-                        </figure>
-                        <figure>
-                          <a target="_blank">
-                            <img
-                              src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg"
-                          /></a>
-                        </figure>
-                        &nbsp;
-                        <figure>
-                          <a target="_blank"> <img src="" /></a>
-                        </figure>
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-                <!-- ====== Main Slider End ======= -->
-              </font>
-              <div class="section section-1">
-                <font rwr="1" style="font-family: Arial" size="4">
-                  <div class="sleft">
-                    <!-- Slider -->
-                    <div class="product-slider">
-                      <div class="frame">
-                        <div class="frame-inner">
-                          <input
-                            type="radio"
-                            name="push"
-                            id="push1"
-                            class="push"
-                          />
-                          <input
-                            type="radio"
-                            name="push"
-                            id="push2"
-                            class="push"
-                          />
-                          <input
-                            type="radio"
-                            name="push"
-                            id="push3"
-                            class="push"
-                          />
-                          <input
-                            type="radio"
-                            name="push"
-                            id="push4"
-                            class="push"
-                          />
-                          <input
-                            type="radio"
-                            name="push"
-                            id="push5"
-                            class="push"
-                            checked="checked"
-                          />
-                          <div>
-                            <input
-                              type="radio"
-                              name="pic"
-                              id="pic1"
-                              class="pics"
-                              checked="checked"
-                            />
-                            <input
-                              type="radio"
-                              name="pic"
-                              id="pic2"
-                              class="pics"
-                            />
-                            <input
-                              type="radio"
-                              name="pic"
-                              id="pic3"
-                              class="pics"
-                            />
-                            <input
-                              type="radio"
-                              name="pic"
-                              id="pic4"
-                              class="pics"
-                            />
-                            <input
-                              type="radio"
-                              name="pic"
-                              id="pic5"
-                              class="pics"
-                            />
-                            <label for="pic1" class="lab1 thumb"
-                              ><img
-                                src="https://i.ebayimg.com/images/g/rh8AAOSwcWBg3bUC/s-l1600.jpg"
-                                alt="thumbnail product image 01"
-                            /></label>
-                            <label for="pic2" class="lab2 thumb"
-                              ><img
-                                src="https://i.ebayimg.com/images/g/2oIAAOSwDM5lQ0cM/s-l1600.jpg"
-                                alt="thumbnail product image 02"
-                            /></label>
-                            <label for="pic3" class="lab3 thumb"
-                              ><img
-                                src="https://i.ebayimg.com/images/g/A9oAAOSwhFNlQ0ox/s-l1600.jpg"
-                                alt="thumbnail product image 03"
-                            /></label>
-                            <label for="pic4" class="lab4 thumb"
-                              ><img
-                                src="https://i.ebayimg.com/images/g/caEAAOSwjcplQ0nY/s-l1600.jpg"
-                                alt="thumbnail product image 04"
-                            /></label>
-                            <div class="p1 big-img">
-                              <img
-                                class="large"
-                                src="https://i.ebayimg.com/images/g/rh8AAOSwcWBg3bUC/s-l1600.jpg"
-                                alt="large product image 01"
-                              />
-                            </div>
-                            <div class="p2 big-img">
-                              <img
-                                class="large"
-                                src="https://i.ebayimg.com/images/g/2oIAAOSwDM5lQ0cM/s-l1600.jpg"
-                                alt="large product image 02"
-                              />
-                            </div>
-                            <div class="p3 big-img">
-                              <img
-                                class="large"
-                                src="https://i.ebayimg.com/images/g/A9oAAOSwhFNlQ0ox/s-l1600.jpg"
-                                alt="large product image 03"
-                              />
-                            </div>
-                            <div class="p4 big-img">
-                              <img
-                                class="large"
-                                src="https://i.ebayimg.com/images/g/caEAAOSwjcplQ0nY/s-l1600.jpg"
-                                alt="large product image 04"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Slider -->
-                  </div>
-                </font>
-                <div class="ReviewsRight">
-                  <font rwr="1" style="font-family: Arial" size="4">
-                    <br />
-                  </font>
-                  <h3>
-                    <font rwr="1" style="font-family: Arial" size="4">
-                      Our Products Features:
-                    </font>
-                  </h3>
-
-                  <div class="sbullets">
-                    <font rwr="1" style="font-family: Arial" size="4">
-                      <ul>
-                        <li>
-                          <b>
-                            <font style="vertical-align: inherit">
-                              <font style="vertical-align: inherit"
-                                >SAFOLA AIR è la giacca ASPIDEX certificata in
-                                Classe A</font
-                              >
-                            </font>
-                          </b>
-                          <font style="vertical-align: inherit">
-                            <font style="vertical-align: inherit">
-                              perfetta in ESTATE, antiacqua . Completa di
-                              protezioni certificate su spalle e gomiti
-                            </font>
-                            <font style="vertical-align: inherit"></font>
-                          </font>
-                        </li>
-                        <li>
-                          <b>
-                            <font style="vertical-align: inherit">
-                              <font style="vertical-align: inherit"
-                                >Protezioni per spalle e</font
-                              >
-                            </font>
-                          </b>
-                          <font style="vertical-align: inherit">
-                            <font style="vertical-align: inherit">
-                              gomiti omologate CE.
-                            </font>
-                            <font style="vertical-align: inherit"></font>
-                          </font>
-                        </li>
-                        <li>
-                          <b>Chiusura lampo</b> costruzione delle cuciture di
-                          sicurezza secondo lo standard EN 17092-4: 2022.
-                        </li>
-                        <li>
-                          <b>Tutte le aree di cucitura per la</b> con
-                          regolazione del volume.
-                        </li>
-                        <li><b>Regolazione del</b> volume delle maniche.</li>
-                        <li>
-                          <b> Regolazione in vita</b> con sistema di bottoni a
-                          pressione.
-                        </li>
-                        <li><b>Vita regolabile</b> con cinturino e velcro..</li>
-                        <li><b>Chiusura del collo </b> di collegamento</li>
-                        <li>
-                          <b>Giacca moto per uso stradale</b> in tessuto
-                          traforato traspirante, misto poliestere e nylon
-                        </li>
-                        <li>
-                          <b>Tessuto</b> in tessuto traforato traspirante, misto
-                          poliestere e nylon
-                        </li>
-                        <li>
-                          <b>Giacca moto per uso stradale</b> in tessuto
-                          traforato traspirante, misto poliestere e nylon
-                        </li>
-                        <li>
-                          <b>Giacca moto per uso stradale</b> in tessuto
-                          traforato traspirante, misto poliestere e nylon
-                        </li>
-                        <li>
-                          <b>Giacca moto per uso stradale</b> in tessuto
-                          traforato traspirante, misto poliestere e nylon
-                        </li>
-                      </ul>
-                    </font>
-                  </div>
-                  <font rwr="1" style="font-family: Arial" size="4"> </font>
-                </div>
-                <font rwr="1" style="font-family: Arial" size="4"> </font>
-              </div>
-              <font rwr="1" style="font-family: Arial" size="4"> </font>
-            </div>
-            <font rwr="1" style="font-family: Arial" size="4"> </font>
-          </div>
-          <font rwr="1" style="font-family: Arial" size="4">
-            <div class="p-descrition">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
-                enim laborum deleniti, cumque aliquam repudiandae earum aut quia
-                voluptas. Maxime iste consequuntur voluptatem aliquid a dolorum
-                voluptas, quas accusantium autem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Similique possimus deserunt ut
-                voluptatum voluptas fuga doloribus, est inventore dolorem
-                deleniti harum explicabo iste vel culpa repellendus. Minima
-                atque voluptate dolore! Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Consectetur aliquam tempore enim, amet et
-                error explicabo aspernatur perferendis voluptas natus quo
-                dignissimos dolorem odit quaerat libero eos id ullam
-                accusamus!Lorem Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Veniam laboriosam non aut! Temporibus amet
-                expedita voluptatem, quidem porro ipsum consequatur. Provident
-                similique ut repellat repudiandae, illum dolorum sed inventore
-                molestias.
-              </p>
-            </div>
-            <div id="BrandsImages" >
-              <div id="gradient-Background">
-                  
-                <div class="badge">
-                  <img src="/brand1.jpg" alt="">
-                </div>
-                  
-                <div class="badge">
-                  <img src="/brand2.jpg" alt="">
-                </div>
-                  
-                <div class="badge">
-                  <img src="/brand3.jpg" alt="">
-                </div>
-                  
-                <div class="badge">
-                  <img src="/brand4.jpg" alt="">
-                </div>
-                  
-                <div class="badge">
-                  <img src="/brand5.jpg" alt="">
-                </div>
-                  
-                <div class="badge">
-                  <img src="/brand6.jpg" alt="">
-                </div>
-                  
-                <div class="badge">
-                  <img src="brand7.jpg" alt="">
-                </div>
-                  
-                <div class="badge">
-                  <img src="/brand8.jpg" alt="">
-                </div>
-                <div class="badge">
-                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
-                </div>
-                <div class="badge">
-                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
-                </div>
-                <div class="badge">
-                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
-                </div>
-                <div class="badge">
-                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
-                </div>
-                <div class="badge">
-                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
-                </div>
-                
-                <div class="badge">
-                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
-                </div>
-                <div class="badge">
-                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
-                </div>
-                <div class="badge">
-                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
-                </div>
-                <div class="badge">
-                  <img src="https://i.ebayimg.com/images/g/vF0AAOSwZMxlkp7C/s-l1600.jpg" alt="">
-                </div>
-              </div>
-              
-
-            </div>
-            <!-- <div class="celwidget aplus-module module-5"cel_widget_id="aplus-module-5" data-cel-widget="aplus-module-5">
-              
-                <div class="aplus-module-wrapper">
-                  <div class="apm-spacing aplus-module-content">
-                    <div class="apm-tablemodule">
-                      <br /><br /><br /><br />
-                      <table
-                        class="apm-tablemodule-table"
-                        cellspacing="0"
-                        cellpadding="0"
-                      >
-
-                        <tbody>
-                          <tr class="apm-tablemodule-imagerows">
-                            <th class="apm-tablemodule-blankkeyhead"><br /></th>
-                            <th class="apm-tablemodule-image" colspan="6">
-                              <h1
-                                style="
-                                  width: 100%;
-                                  background-color: black;
-                                  color: white;
-                                  margin: 5% 0px;
-                                  font-size: 1.5rem;
-                                "
-                              >
-                                OUR PRODUCTS SECTION
-                              </h1>
-                            </th>
-                          </tr>
-                          <tr class="apm-tablemodule-imagerows " >
-                            <th class="apm-tablemodule-blankkeyhead ">
-                              <br />
-                            </th>
-                            <th class="apm-tablemodule-image ">
-                              <a >
-                                <img
-                                  class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  width="148.0px"
-                                />
-                              </a>
-                            </th>
-                            <th class="apm-tablemodule-image">
-                              <a>
-                                <img
-                                  class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  width="148.0px"
-                                />
-                              </a>
-                            </th>
-                            <th class="apm-tablemodule-image">
-                              <a>
-                                <img
-                                  class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  width="148.0px"
-                                />
-                              </a>
-                            </th>
-                            <th class="apm-tablemodule-image">
-                              <a>
-                                <img
-                                  class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  width="148.0px"
-                                />
-                              </a>
-                            </th>
-                            <th class="apm-tablemodule-image">
-                              <a>
-                                <img
-                                  class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  width="148.0px"
-                                />
-                              </a>
-                            </th>
-                            <th class="apm-tablemodule-image">
-                              <a>
-                                <img
-                                 class="Imgborders" 
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  width="148.0px"
-                                />
-                              </a>
-                            </th>
-                          </tr>
-
-                          <tr class="apm-tablemodule-imagerows">
-                            <th class="apm-tablemodule-blankkeyhead"><br /></th>
-                            <th class="apm-tablemodule-image" colspan="6">
-                              <h1
-                                style="
-                                  width: 100%;
-                                  background-color: black;
-                                  color: white;
-                                  margin: 5% 0px;
-                                "
-                              >
-                                OUR PRODUCTS SECTION
-                              </h1>
-                            </th>
-                          </tr>
-
-                          <tr class="apm-tablemodule-imagerows">
-                            <th class="apm-tablemodule-blankkeyhead">
-                              <br />
-                            </th>
-                            <th class="apm-tablemodule-image">
-                              <a>
-                                <img
-                                  class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  width="148.0px"
-                                />
-                              </a>
-                            </th>
-                            <th class="apm-tablemodule-image">
-                              <a>
-                                <img
-                                  class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  width="148.0px"
-                                />
-                              </a>
-                            </th>
-                            <th class="apm-tablemodule-image">
-                              <a>
-                                <img
-                                  class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  width="148.0px"
-                                />
-                              </a>
-                            </th>
-                            <th class="apm-tablemodule-image">
-                              <a>
-                                <img
-                                  class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  width="148.0px"
-                                />
-                              </a>
-                            </th>
-                            <th class="apm-tablemodule-image">
-                              <a>
-                                <img
-                                class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  width="148.0px"
-                                />
-                              </a>
-                            </th>
-                            <th class="apm-tablemodule-image">
-                              <a>
-                                <img
-                                class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  />
-                                  width="148.0px"
-                              </a>
-                            </th>
-                          </tr>
-                        
-                        </tbody>
-                      </table>
-                      <font rwr="1" style="font-family: Arial" size="4"> </font>
-                    </div>
-                    <font rwr="1" style="font-family: Arial" size="4"> </font>
-                  </div>
-                  <font rwr="1" style="font-family: Arial" size="4"> </font>
-                </div>
-                <font rwr="1" style="font-family: Arial" size="4">
-                  <div style="clear: both"></div>
-                </font>
-              </font>
-            </div> -->
-
-            <div class="productimages">
-              <div class="imgheading">
-                <h1>OUR MOST SELLING PRODUCTS</h1>
-              </div>
-              <div class="imgproduct">
-                
-                <a class="bor " href="https://www.ebay.it/itm/363910085649" target="_blank">
-                  <img
-                                class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                  />
-                </a>
-              
-              
-              
-              
-                <a class="bor" href="https://www.ebay.it/itm/363454218559" target="_blank">
-                  <img
-                                class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/7tIAAOSw7qpll-IQ/s-l500.jpg"
-                                  />
-                </a>
-              
-                <a class="bor" href="https://www.ebay.it/itm/363925500036" target="_blank">
-                      
-                  <img
-                                class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/AcUAAOSwVMlll-K6/s-l500.jpg"
-                                  />
-                </a>
-              
-              
-                <a class="bor" href="https://www.ebay.it/itm/363812796858" target="_blank">
-                      
-                  <img
-                                class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/xBMAAOSw~O1ll-P3/s-l500.jpg"
-                                  />
-                </a>
-              
-              
-                <a class="bor" href="https://www.ebay.it/itm/363887813758" target="_blank">
-                  <img
-                                class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/rz8AAOSwmvRll-Sa/s-l500.jpg"
-                                  />
-              
-                </a>
-              
-              
-              <a class="bor"  href="https://www.ebay.it/itm/363919011106
-                              " target="_blank">
-                      
-                                <img
-                                class="Imgborders"
-                                  src="https://i.ebayimg.com/images/g/JaQAAOSwMJ1ll-Vm/s-l500.jpg"
-                                  />
-                      
-                      
-                      
-                              </a>
-               
-                
-              
-                
-              </div>
-        
-        
-              
-                <div class="imgheading2">
-        
-                  <h1> OUR OTHER ITEMS</h1>
-        
-                </div>
-        
-                <div class="imgproduct">
-                
-                  <a class="bor " href="https://www.ebay.it/itm/363910085649" target="_blank">
-                    <img
-                                  class="Imgborders"
-                                    src="https://i.ebayimg.com/images/g/BuYAAOSw5tllk56q/s-l500.jpg"
-                                    />
-                  </a>
-                
-                
-                
-                
-                  <a class="bor" href="https://www.ebay.it/itm/363454218559" target="_blank">
-                    <img
-                                  class="Imgborders"
-                                    src="https://i.ebayimg.com/images/g/7tIAAOSw7qpll-IQ/s-l500.jpg"
-                                    />
-                  </a>
-                
-                  <a class="bor" href="https://www.ebay.it/itm/363925500036" target="_blank">
-                        
-                    <img
-                                  class="Imgborders"
-                                    src="https://i.ebayimg.com/images/g/AcUAAOSwVMlll-K6/s-l500.jpg"
-                                    />
-                  </a>
-                
-                
-                  <a class="bor" href="https://www.ebay.it/itm/363812796858" target="_blank">
-                        
-                    <img
-                                  class="Imgborders"
-                                    src="https://i.ebayimg.com/images/g/xBMAAOSw~O1ll-P3/s-l500.jpg"
-                                    />
-                  </a>
-                
-                
-                  <a class="bor" href="https://www.ebay.it/itm/363887813758" target="_blank">
-                    <img
-                                  class="Imgborders"
-                                    src="https://i.ebayimg.com/images/g/rz8AAOSwmvRll-Sa/s-l500.jpg"
-                                    />
-                
-                  </a>
-                
-                
-                <a class="bor"  href="https://www.ebay.it/itm/363919011106
-                                " target="_blank">
-                        
-                                  <img
-                                  class="Imgborders"
-                                    src="https://i.ebayimg.com/images/g/JaQAAOSwMJ1ll-Vm/s-l500.jpg"
-                                    />
-                        
-                        
-                        
-                                </a>
-                 
-                  
-                
-                  
-                </div>
-        
-                </div>
-        
-        
-        
-        
-              
-        
-            </div>
-            <font rwr="1" style="font-family: Arial" size="4">
-              <font rwr="1" style="font-family: Arial" size="4">
-                <font rwr="1" style="font-family: Arial" size="4"> </font>
-              </font>
-            </font>
-          </font>
-          <font rwr="1" style="font-family: Arial" size="4">
-            <font rwr="1" style="font-family: Arial" size="4">
-              <font rwr="1" style="font-family: Arial" size="4"> </font>
-            </font>
-          </font>
-          <div class="section section-7 mobilemargin">
-            <font rwr="1" style="font-family: Arial" size="4">
-              <font rwr="1" style="font-family: Arial" size="4">
-                <font rwr="1" style="font-family: Arial" size="4">
-                  <div class="sleft">
-                    <h2>Reviews From Clients</h2>
-                    <ul>
-                      <br />
-                      <li>
-                        <span class="RecivingYourItem">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Voluptatibus similique, doloremque omnis enim
-                          quasi inventore assumenda at delectus! Autem natus
-                          eligendi eius deserunt laborum esse, quos quae hic
-                          tempora ipsam. Lorem ipsum dolor sit amet consectetur,
-                          adipisicing elit. Asperiores, est. Minima voluptatem
-                          voluptates quis qui odit nostrum doloribus
-                          repudiandae, amet quaerat iure aliquam? Modi dolorum
-                          voluptatem magni amet incidunt quidem. Lorem ipsum
-                          dolor sit amet consectetur adipisicing elit. Dicta
-                          explicabo doloremque nulla illum aspernatur eligendi
-                          at id eaque, cumque asperiores, culpa voluptates
-                          sapiente quaerat aliquam illo. Tempore voluptatem quod
-                          autem.
-                        </span>
-                        <span class="rating">
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                        </span>
-                      </li>
-                      <li>
-                        <span class="RecivingYourItem">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Dicta explicabo doloremque nulla illum
-                          aspernatur eligendi at id eaque, cumque asperiores,
-                          culpa voluptates sapiente quaerat aliquam illo.
-                          Tempore voluptatem quod autem.
-                        </span>
-                        <span class="rating">
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                        </span>
-                      </li>
-                      <li>
-                        <span class="RecivingYourItem">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Dicta explicabo doloremque nulla illum
-                          aspernatur eligendi at id eaque, cumque asperiores,
-                          culpa voluptates sapiente quaerat aliquam illo.
-                          Tempore voluptatem quod autem.
-                        </span>
-                        <span class="rating">
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                        </span>
-                      </li>
-                      <li>
-                        <span class="RecivingYourItem">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Dicta explicabo doloremque nulla illum
-                          aspernatur eligendi at id eaque, cumque asperiores,
-                          culpa voluptates sapiente quaerat aliquam illo.
-                          Tempore voluptatem quod autem.
-                        </span>
-                        <span class="rating">
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                          <img
-                            src="https://i.ebayimg.com/images/g/S0MAAOSwvgVlk58I/s-l1600.jpg"
-                          />
-                        </span>
-                      </li>
-                    </ul>
-                  </div> </font
-              ></font>
-              <div class="ReviewsRight RecivingYourItem">
-                <font rwr="1" style="font-family: Arial" size="4"
-                  ><font rwr="1" style="font-family: Arial" size="4"> </font
-                ></font>
-                <div class="Colums">
-                  <font rwr="1" style="font-family: Arial" size="4"
-                    ><font rwr="1" style="font-family: Arial" size="4"> </font
-                  ></font>
-                  <div class="tabs">
-                    <font rwr="1" style="font-family: Arial" size="4"
-                      ><font rwr="1" style="font-family: Arial" size="4">
-                        <div class="tab">
-                          <input
-                            type="radio"
-                            id="rd1"
-                            name="rd"
-                            checked="checked"
-                          />
-                          <label class="tab-label" for="rd1">INFORMATION</label>
-                          <div class="tab-content">
-                            <strong
-                              >Receiving Your Item - Your Insurance!
-                            </strong>
-                            <p>
-                              Please allow up to 24 hours for your order to be
-                              processed and your item to be shipped. First class
-                              courier services (most deliveries are via courier)
-                              will take 1-2 working days after dispatch (Monday
-                              to Friday only)
-                            </p>
-                          </div>
-                        </div>
-                      </font></font
-                    >
-                    <div class="tab">
-                      <input type="radio" id="rd4" name="rd" />
-                      <label class="tab-label" for="rd4">ABOUT US</label>
-                      <div class="tab-content">
-                        <p>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Numquam sapiente, perferendis aliquid, culpa
-                          veritatis perspiciatis adipisci ab facere maxime,
-                          tempore ut officiis illo. Deleniti eligendi commodi in
-                          perspiciatis praesentium quod.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </font>
-          </div>
-          <font rwr="1" style="font-family: Arial" size="4">
-            <font rwr="1" style="font-family: Arial" size="4">
-              <font rwr="1" style="font-family: Arial" size="4">
-                <div class="section section-8">
-                  <div class="bottom">
-                    <a
-                      href="https://www.ebay.it/str/abbigliamentomoto?_trksid=p4429486.m3561.l2563&amp;_tab=2"
-                      target="_blank"
-                      ><span>
-                        <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit">ABOUT US</font>
-                        </font>
-                      </span></a
-                    >
-
-                    <a
-                      href="https://www.ebay.it/cnt/FindAnswers?ShowSellerFAQ=&amp;item_id=364533946329&amp;requested=abbigliamentomoto&amp;redirect=0&amp;frm=284&amp;rt=nc&amp;ssPageName=PageSellerM2MFAQ_VI&amp;_trksid=p4429486.m3561.l1499&amp;_caprdt=1"
-                      target="_blank"
-                      ><span>
-                        <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit"
-                            >ADD TO FAVRIOUT SELLER</font
-                          >
-                        </font>
-                      </span></a
-                    >
-                    <a
-                      href="https://www.ebay.it/cnt/intermediatedFAQ?requested=abbigliamentomoto"
-                      target="_blank"
-                      ><span>
-                        <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit"
-                            >ASK THE SELLER A QUESTION</font
-                          >
-                        </font>
-                      </span></a
-                    >
-                    <a
-                      href="https://www.ebay.it/str/abbigliamentomoto?_trksid=p4429486.m3561.l2563"
-                      target="_blank"
-                      ><span>
-                        <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit"
-                            >ASK THE SELLER A QUESTION</font
-                          >
-                        </font>
-                      </span></a
-                    >
-                  </div>
-                </div>
-              </font>
-              <font rwr="1" style="font-family: Arial" size="4"> </font>
-              <font rwr="1" style="font-family: Arial" size="4"> </font>
-            </font>
-          </font>
-        </div>
-      </td>
-    </tr>
-  </tbody>
-</table>
+          
+          
+    
+  
 
 
 <!-- 506 sy 605 -->
